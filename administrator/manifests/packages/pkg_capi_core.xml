@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.4"  method="upgrade">
+	<name>cAPI - Core Package</name>
+	<packagename>capi_core</packagename>
+	<creationDate>September  8, 2018</creationDate>
+	<packager>Steve Tsiopanos - Annatech LLC</packager>
+	<copyright>Copyright (C) 2018 Annatech LLC. All rights reserved.</copyright>
+	<packageremail>steve.tsiopanos@annatech.com</packageremail>
+	<packagerurl>https://www.annatech.com</packagerurl>
+	<author>Steve Tsiopanos</author>
+	<authorEmail>steve.tsiopanos@annatech.com</authorEmail>
+	<authorUrl>https://www.annatech.com</authorUrl>
+	<version>1.3.6</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description><![CDATA[
+	<div style="float:right;padding:15px;">
+	<a href="https://www.annatech.com" target="_blank"><img
+	src="https://www.annatech.com/images/products/annatech-logo.png" alt="Annatech LLC"></a>
+	</div>
+	<h2>Joomla REST Services base package.</h2>
+	<p>This package provides access to core Joomla functionality via a powerful REST API built on the Slim PHP
+	Framework.</p>
+	<p>Includes the following libraries:</p>
+	<ul>
+		<li>composer</li>
+		<li>cryptolib</li>
+		<li>doctrine</li>
+		<li>evenement</li>
+		<li>guzzlehttp</li>
+		<li>ircmaxell</li>
+		<li>joomla</li>
+		<li>palanik</li>
+		<li>psr</li>
+		<li>react</li>
+		<li>ringcentral</li>
+		<li>slim</li>
+		<li>symfony</li>
+		<li>zircote</li>
+	</ul>
+	<p>Learn more about cAPI through our online documentation at <a href="https://learn.getcapi.org" target="_blank" alt="cAPI Online Documentation">https://learn.getcapi.org</a></p>
+	]]>
+	</description>
+	<!-- Update servers -->
+	<updateservers>
+		<server type="extension" priority="2" name="cAPI - Core Package Updates"><![CDATA[https://www.annatech.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=2]]></server>
+	</updateservers>
+	<files folder="packages">
+		<file type="plugin" id="services" group="search">plg_search_services.zip</file>
+		<file type="plugin" id="rest" group="services">plg_services_rest.zip</file>
+		<file type="plugin" id="slim" group="services">plg_services_slim.zip</file>
+		<file type="plugin" id="joomla" group="services">plg_services_joomla.zip</file>
+		<file type="plugin" id="slimjsonapimiddleware" group="services">plg_services_slimjsonapimiddleware.zip</file>
+		<file type="plugin" id="slimjsonapiview" group="services">plg_services_slimjsonapiview.zip</file>
+		<file type="library" id="lib_services">lib_services.zip</file>
+		<file type="component" id="com_services">com_services.zip</file>
+	</files>
+</extension>

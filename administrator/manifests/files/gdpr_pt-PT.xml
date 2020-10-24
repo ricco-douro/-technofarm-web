@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="file" method="upgrade">
+<name>GDPR Portuguese translation</name>
+<packagename>GDPR_pt-PT</packagename>
+<version>1.0</version>
+<creationDate>May 2018</creationDate>
+<packager>JExtensions Store</packager>
+<packagerEmail>migabytes@migabytes.com</packagerEmail>
+<packagerurl>http://www.migabytes.com</packagerurl>
+<tag>pt-PT</tag>
+
+<fileset>
+<!-- Admin component language folder for Joomla!-->
+<files folder="admin" target="administrator/language/pt-PT">
+		  <filename>pt-PT.com_gdpr.ini</filename>
+		  <filename>pt-PT.com_gdpr.sys.ini</filename>
+</files>
+<!-- Site component language folder  for Joomla!-->
+<files folder="site" target="language/pt-PT">
+		  <filename>pt-PT.com_gdpr.ini</filename>		  
+</files>
+</fileset>
+</extension>

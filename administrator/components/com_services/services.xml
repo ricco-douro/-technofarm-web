@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_services</name>
+    <creationDate>September  8, 2018</creationDate>
+    <copyright>Copyright (C) 2018 Annatech LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <author>Steve Tsiopanos</author>
+    <authorEmail>steve.tsiopanos@annatech.com</authorEmail>
+    <authorUrl>https://www.annatech.com</authorUrl>
+    <version>1.3.6</version>
+    <description>Manage our RESTful APIs which turn Joomla into a backend service provider for other enterprise applications and mobile devices. Developed by Steve Tsiopanos, Annatech LLC. Powered by Slim PHP Framework.</description>
+    <!-- Removed due to updates now being delivered via cAPI Core Package only
+    <updateservers>
+        <server type="extension" priority="1" name="cAPI - Services Control Panel"><![CDATA[https://www.annatech.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=3]]></server>
+    </updateservers>
+    -->
+    <scriptfile>script.php</scriptfile>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update> <!-- Runs on update -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/update.mysql.utf8.sql</file>
+        </sql>
+    </update>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>services.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+
+    <media destination="com_services" folder="media">
+        <folder>js</folder>
+        <folder>css</folder>
+    </media>
+    <languages folder="languages/site">
+			<language tag="en-GB">en-GB/en-GB.com_services.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_services/assets/images/s_com_services.png" >COM_SERVICES</menu>
+        <submenu>
+			<menu link="option=com_services&amp;view=tokens" view="tokens" img="components/com_services/assets/images/s_tokens.png" alt="Services/Tokens">COM_SERVICES_TITLE_TOKENS</menu>
+			<menu link="option=com_services&amp;view=slimphpframework" view="slimphpframework" img="components/com_services/assets/images/s_slimphpframework.png" alt="Services/Slimphpframework">COM_SERVICES_TITLE_SLIMPHPFRAMEWORK</menu>
+            <menu link="option=com_services&amp;view=swaggerui" view="swaggerui" img="components/com_services/assets/images/s_swaggerui.png" alt="Services/Swaggerui">COM_SERVICES_TITLE_SWAGGERUI</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>services.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+			<language tag="en-GB">en-GB/en-GB.com_services.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_services.sys.ini</language>
+        </languages>
+    </administration>
+    <config>
+        <fields name="params">
+            <fieldset name="component">
+                <field name="save_history" default="0" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

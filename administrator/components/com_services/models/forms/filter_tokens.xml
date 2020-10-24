@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+        <field name="search" type="text" hint="COM_SERVICES_SEARCH_FILTER_SUBMIT"
+               label="COM_USERS_FILTER_SEARCH_DESC"
+               class="js-stools-search-string" />
+
+        <field name="state"
+               type="status"
+               label="COM_SERVICES_FILTER_STATE"
+               description="COM_SERVICES_FILTER_STATE_DESC"
+               onchange="this.form.submit();"
+        >
+            <option value="">JOPTION_SELECT_PUBLISHED</option>
+        </field>
+
+        <field name="userid" label="COM_SERVICES_FORM_LBL_TOKEN_USERID" type="sql" query="SELECT &quot;&quot; AS `id`, &quot;COM_SERVICES_TOKENS_USERID_FILTER&quot; AS `name` UNION SELECT `id`, `name` FROM `#__users`" translate="true" key_field="id" value_field="name" onchange="this.form.submit();"/>
+
+
+    </fields>
+
+    <fields name="list">
+
+        <field name="fullordering"
+               type="list"
+               label="COM_CONTENT_LIST_FULL_ORDERING"
+               description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+               onchange="this.form.submit();"
+               default="a.id DESC"
+        >
+            <option value="">JGLOBAL_SORT_BY</option>
+            <option value="a.`id` ASC">id Ascending</option><option value="a.`id` DESC">id Descending</option><option value="a.`ordering` ASC">ordering Ascending</option><option value="a.`ordering` DESC">ordering Descending</option><option value="a.`userid` ASC">User Ascending</option><option value="a.`userid` DESC">User Descending</option><option value="a.`token` ASC">Token Ascending</option><option value="a.`token` DESC">Token Descending</option><option value="a.`mode` ASC">Mode Ascending</option><option value="a.`mode` DESC">Mode Descending</option><option value="a.`debug` ASC">Debug Ascending</option><option value="a.`debug` DESC">Debug Descending</option><option value="a.`api_rate_limit` ASC">API Rate Limit Ascending</option><option value="a.`api_rate_limit` DESC">API Rate Limit Descending</option>
+
+        </field>
+
+        <field name="limit"
+               type="limitbox"
+               class="input-mini"
+               default="25"
+               onchange="this.form.submit();"
+        />
+
+    </fields>
+
+</form>

@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# RewriteBase /api/v1
+
+#SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+RewriteRule .* - [env=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+#RewriteCond %{HTTP:Authorization} ^(.)
+#RewriteRule ^(.) - [E=HTTP_AUTHORIZATION:%1]
+
+# Cross domain access is now fully handled in code.
+Header add Access-Control-Allow-Headers "X-Requested-With, Origin, Content-Type, token, dlid, nonce, Authorization"
+Header add Access-Control-Allow-Methods "GET, PUT, POST, DELETE, OPTIONS"
+
+RewriteRule ^(api-docs)($|/) - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

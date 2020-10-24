@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5.0" method="upgrade">
+	 <name>Membership Pro Package</name>
+	  <packagename>osmembership</packagename>
+	  <creationDate>September 2012</creationDate>
+	  <author>Tuan Pham Ngoc</author>
+	  <authorEmail>contact@joomdonation.com</authorEmail>
+	  <authorUrl>http://www.joomdonation.com</authorUrl>
+	  <copyright>Copyright (C) 2012 - 2019 Ossolution Team</copyright>
+	  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	  <version>2.17.1</version>
+	  <description>Membership Pro give you an quick and easy way to sell memberships and give subscribers access to resources on your site</description>
+	  <scriptfile>script.php</scriptfile>
+	 <files folder="packages">	   
+	   <file type="module" id="osmembership" client="site">mod_membershipplans.zip</file>
+	   <file type="module" id="osmembership" client="site">mod_membershippro_view.zip</file>	   
+	   <file type="module" id="osmembership" client="site">mod_membershipstatus.zip</file>	   
+	   <file type="plugin" id="osmembership" group="content">plug_content_membershipplans.zip</file>
+	   <file type="plugin" id="osmembership" group="content">plug_content_mprestriction.zip</file>
+	   <file type="plugin" id="osmembership" group="content">plug_content_membership.zip</file>	   
+	   <file type="plugin" id="osmembership" group="content">plug_content_membershiptags.zip</file>	   
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_acym.zip</file>   	   
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_acymailing.zip</file>   	   
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_cb.zip</file>	   	   
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_jomsocial.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_easysocial.zip</file>	   
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_joomlagroups.zip</file>	   
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_mailchimp.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_registrationhistory.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_userprofile.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_groupmembership.zip</file>	   
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_script.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_easyprofile.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_k2groups.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_documents.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_limitsubscriptions.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_autosubscribe.zip</file>
+	   <file type="plugin" id="osmembership" group="osmembership">plug_osmembership_vmshoppergroups.zip</file>
+	   <file type="plugin" id="osmembership" group="user">plug_user_osmembership.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_osmembershiparticles.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_osmembershipcleaner.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_osmembershipk2.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_osmembershipreminder.zip</file>	   
+	   <file type="plugin" id="osmembership" group="system">plug_system_osmembershipupdatestatus.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_osmembershipurls.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_registrationredirect.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_membershippro.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_schedulecontent.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_schedulek2items.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_mpsppagebuilder.zip</file>
+	   <file type="plugin" id="osmembership" group="system">plug_system_mpofflinerecurringinvoice.zip</file>	   
+	   <file type="plugin" id="osmembership" group="installer">plug_installer_membershippro.zip</file>
+	   <file type="library" id="osmembership">lib_omnipay.zip</file>
+	   <file type="library" id="eventbooking">lib_osphpexcel.zip</file>
+	   <file type="component" id="osmembership">com_osmembership.zip</file>
+	 </files>	 
+	 <updateservers>	
+		<server type="extension" priority="1" name="Membership Pro Extension">https://www.joomdonation.com/updates/membershippro.xml</server>
+	</updateservers>
+ </extension>
