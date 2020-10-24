@@ -1,0 +1,86 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 14/04/2019 21:36
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-farm:before { content: "\f100"; }
+.flaticon-ground:before { content: "\f101"; }
+.flaticon-field:before { content: "\f102"; }
+.flaticon-field-1:before { content: "\f103"; }
+.flaticon-field-2:before { content: "\f104"; }
+.flaticon-landscape:before { content: "\f105"; }
+.flaticon-farm-1:before { content: "\f106"; }
+.flaticon-drone:before { content: "\f107"; }
+.flaticon-drone-1:before { content: "\f108"; }
+.flaticon-tractor:before { content: "\f109"; }
+.flaticon-farm-2:before { content: "\f10a"; }
+.flaticon-farm-3:before { content: "\f10b"; }
+.flaticon-farm-4:before { content: "\f10c"; }
+.flaticon-sun:before { content: "\f10d"; }
+.flaticon-docs:before { content: "\f10e"; }
+.flaticon-document-file-hand-drawn-symbol:before { content: "\f10f"; }
+.flaticon-document:before { content: "\f110"; }
+.flaticon-document-1:before { content: "\f111"; }
+.flaticon-copy:before { content: "\f112"; }
+.flaticon-folders:before { content: "\f113"; }
+.flaticon-data-management-interface-symbol-with-gears-and-binary-code-numbers:before { content: "\f114"; }
+.flaticon-petri-dish:before { content: "\f115"; }
+.flaticon-binary-data:before { content: "\f116"; }
+    
+    $font-Flaticon-farm: "\f100";
+    $font-Flaticon-ground: "\f101";
+    $font-Flaticon-field: "\f102";
+    $font-Flaticon-field-1: "\f103";
+    $font-Flaticon-field-2: "\f104";
+    $font-Flaticon-landscape: "\f105";
+    $font-Flaticon-farm-1: "\f106";
+    $font-Flaticon-drone: "\f107";
+    $font-Flaticon-drone-1: "\f108";
+    $font-Flaticon-tractor: "\f109";
+    $font-Flaticon-farm-2: "\f10a";
+    $font-Flaticon-farm-3: "\f10b";
+    $font-Flaticon-farm-4: "\f10c";
+    $font-Flaticon-sun: "\f10d";
+    $font-Flaticon-docs: "\f10e";
+    $font-Flaticon-document-file-hand-drawn-symbol: "\f10f";
+    $font-Flaticon-document: "\f110";
+    $font-Flaticon-document-1: "\f111";
+    $font-Flaticon-copy: "\f112";
+    $font-Flaticon-folders: "\f113";
+    $font-Flaticon-data-management-interface-symbol-with-gears-and-binary-code-numbers: "\f114";
+    $font-Flaticon-petri-dish: "\f115";
+    $font-Flaticon-binary-data: "\f116";

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="168.66304mm"
+   height="178.72511mm"
+   viewBox="0 0 168.66304 178.72511"
+   version="1.1"
+   id="svg837"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="plaaslogo_grey.svg">
+  <defs
+     id="defs831" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="-223.06565"
+     inkscape:cy="350.14514"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="3"
+     fit-margin-left="3"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata834">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-20.087906,-62.750786)">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:2.92673612;stroke-miterlimit:4;stroke-dasharray:none"
+       y="161.2135"
+       x="112.52128"
+       height="76.43116"
+       width="72.442871"
+       id="rect56" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path58"
+       d="m 24.554937,236.61644 80.204613,1.37096 0.32339,-85.68515 h 80.20464 V 91.294417 c 0,0 -3.88087,-22.963624 -21.66818,-23.649107 -17.78734,-0.685482 -116.426071,-0.342728 -116.426071,-0.342728 0,0 -22.314997,4.455623 -22.314997,23.306353 0,18.850725 -0.323395,146.007505 -0.323395,146.007505 z"
+       style="fill:#cccccc;stroke:#000000;stroke-width:2.92673612;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>

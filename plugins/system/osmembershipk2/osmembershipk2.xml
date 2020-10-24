@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>Membership Pro K2 items Restriction</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2019 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.17.1</version>
+	<description>This plugin check to see whether users can access to a k2 item. Only publish it if you use Membership Pro K2 Restriction Settings plugin to restrict access for subscribers</description>	
+	<files>
+		<filename plugin="osmembershipk2">osmembershipk2.php</filename>				
+	</files>		
+	<config>
+		<fields name="params">
+			<fieldset name="basic">				
+				<field name="redirect_url" label="Redirect URL" type="text" size="70" default="" description="URL of the page users will be redirected to when they are not allowed to access to the k2 item. You should put the url of the subscription plans page on your site into this param"></field>
+				<field name="protection_method" type="radio" label="Protection Method" default="0" description="Select the method you want to use to protect the article">
+					<option value="0">Prevent Access to Item K2 Detail Page</option>
+					<option value="1">Hide fulltext from none subscribers</option>
+				</field>
+				<field name="display_k2_items_in_profile" type="radio" label="Display K2 items in Profile" default="0" description="If set to Yes, the list of k2 items which subscriber can access to will be displayed in his profile">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="allow_search_engine" type="radio" label="Allow search engine" default="0" description="Select to Yes to allow search engine bots to see and index the protected content">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="make_new_item_free_for_x_days" type="text" size="60" default="0" label="Make new items free for X days" description="If enter a number here, K2 items will be free for everyone for the first X days from the time it's published" />
+				<field name="release_item_older_than_x_days" type="text" size="60" default="0" label="Release K2 items older than X days" description="If enter a number here, K2 items older than this entered number days will be free to access to everyone" />
+			</fieldset>
+		</fields>
+	</config>			
+</extension>

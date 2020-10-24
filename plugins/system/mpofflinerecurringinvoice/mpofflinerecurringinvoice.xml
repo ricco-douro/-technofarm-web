@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>System - Membership Pro Offline Recurring Invoice</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>tuanpn@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2019 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.16.2</version>
+	<description>This plugin renew subscription and send invoice to subscribers of offline recurring subscription X days (configure in Number Days parameter) before their subscription expired so that they can make payment to continue having active subscriptions on your site.</description>
+	<files>
+		<filename plugin="mpofflinerecurringinvoice">mpofflinerecurringinvoice.php</filename>
+	</files>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="debug" type="list" label="Debug" description="In case set to Yes, the plugin will be run on every page load, for debug purpose only">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="last_run" label="Last Run Time" type="text" readonly="true" size="30" description="Store Last Run Time of the plugin"></field>
+				<field name="number_subscribers" label="Number Subscribers" type="text" size="30" default="10" description="Number of subscribers which we will send invoice each time the plugin runs"></field>				
+				<field name="number_days" label="Number Days" type="text" size="30" default="10" description="Set to 10 for example and the system will send invoice to subscribers 10 days before their subscription expired"></field>
+				<field name="cache_time" label="Cache Time (hours)" type="text" size="30" default="6" description="Set it to 6 for example, and the system will check and send invoices to subscribers every 6 hours"></field>
+			</fieldset>
+		</fields>
+	</config>	
+</extension>

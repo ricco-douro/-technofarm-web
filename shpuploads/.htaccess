@@ -1,0 +1,18 @@
+#Order deny,allow
+#Deny from all
+#allow from localhost
+
+#RewriteCond &#37;{REMOTE_ADDR} !127\\.0\\.0\\.1$
+#RewriteRule .? - [F,L]
+
+#<Files *.kml>
+#	Order Deny,Allow
+#	Deny from all
+#	Allow from 127.0.0.1
+#</Files>
+#
+#<Files *.zip>
+#	Order Deny,Allow
+#	Deny from all
+#	Allow from 127.0.0.1
+#</Files>

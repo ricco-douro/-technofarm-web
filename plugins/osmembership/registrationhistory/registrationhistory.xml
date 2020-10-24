@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="osmembership" method="upgrade">
+	<name>Membership Pro - Events Booking Registration History</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>tuanpn@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2019 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Feb 2019</creationDate>
+	<version>2.17.1</version>
+	<description>This plugin display Registration History of the current user in his Membership Pro user profile</description>
+	<files>
+		<filename plugin="registrationhistory">registrationhistory.php</filename>		
+	</files>			
+</extension>

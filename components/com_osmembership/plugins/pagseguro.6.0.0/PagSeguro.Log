@@ -1,0 +1,171 @@
+
+29/04/2019 22:20:09 PagSeguro.Authorization[info]: Begin
+29/04/2019 22:20:09 PagSeguro.Authorization[info]: POST: https://ws.pagseguro.uol.com.br/v2/authorizations/request?appId=plaas-agrotech-site&appKey=3287D0892B2BCC4774F23F8DD3D4C3E0
+29/04/2019 22:20:09 PagSeguro.Checkout[info]: Params: <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<authorizationRequest><reference>AUTH_LIB_PHP_0001</reference><permissions><code>CREATE_CHECKOUTS</code><code>SEARCH_TRANSACTIONS</code><code>RECEIVE_TRANSACTION_NOTIFICATIONS</code><code>MANAGE_PAYMENT_PRE_APPROVALS</code><code>DIRECT_PAYMENT</code></permissions><redirectURL>http://www.lojamodelo.com.br</redirectURL><notificationURL>http://www.lojamodelo.com.br/nofitication</notificationURL></authorizationRequest>
+
+29/04/2019 22:20:22 PagSeguro.Authorization[info]: Authorization URL: https://pagseguro.uol.com.br/v2/authorization/request.jhtml?code=54FB3D5715CE4C51B7BFEC811B12D9DB
+29/04/2019 22:24:03 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:24:03 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:24:03 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":"LIBPHP000001","redirectURL":"http:\/\/www.lojamodelo.com.br","notificationURL":"http:\/\/www.lojamodelo.com.br\/nofitication","currency":"BRL","extraAmount":"11.50","itemId1":"0001","itemDescription1":"Notebook prata","itemQuantity1":2,"itemAmount1":"130.00","itemId2":"0002","itemDescription2":"Notebook preto","itemQuantity2":2,"itemAmount2":"430.00","senderName":"Jo\u00e3o Comprador","senderEmail":"email@comprador.com.br","senderAreaCode":11,"senderPhone":"(**) 5627-****","senderCPF":"ins.***.***-**","shippingType":2,"shippingCost":"20.00","shippingAddressStreet":"Av. Brig. Faria Lima","shippingAddressNumber":"1384","shippingAddressComplement":"apto. 114","shippingAddressCity":"S\u00e3o Paulo","shippingAddressState":"SP","shippingAddressDistrict":"Jardim Paulistano","shippingAddressPostalCode":"01452002","shippingAddressCountry":"BRA","metadataItemKey1":"PASSENGER_CPF","metadataItemValue1":"","metadataItemKey2":"GAME_NAME","metadataItemValue2":"DOTA","metadataItemKey3":"PASSENGER_PASSPORT","metadataItemValue3":"23456","metadataItemGroup3":1,"itemId3":"0003","itemDescription3":"Notebook Amarelo","itemQuantity3":"1","itemAmount3":"200.00","paymentMethodGroup1":"CREDIT_CARD","paymentMethodConfigKey1_1":"DISCOUNT_PERCENT","paymentMethodConfigValue1_1":"10.00","paymentMethodGroup2":"CREDIT_CARD","paymentMethodConfigKey2_1":"MAX_INSTALLMENTS_NO_INTEREST","paymentMethodConfigValue2_1":2,"paymentMethodGroup3":"CREDIT_CARD","paymentMethodConfigKey3_1":"MAX_INSTALLMENTS_LIMIT","paymentMethodConfigValue3_1":6}
+29/04/2019 22:24:16 PagSeguro.Session[error]: <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11164</code><message>senderCPF invalid value: insiraumnumerodevalido</message></error><error><code>11123</code><message>MetadataItem Value is required.</message></error></errors>
+29/04/2019 22:26:54 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:26:54 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:26:54 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":"LIBPHP000001","redirectURL":"http:\/\/www.lojamodelo.com.br","notificationURL":"http:\/\/www.lojamodelo.com.br\/nofitication","currency":"BRL","extraAmount":"11.50","itemId1":"0001","itemDescription1":"Notebook prata","itemQuantity1":2,"itemAmount1":"130.00","itemId2":"0002","itemDescription2":"Notebook preto","itemQuantity2":2,"itemAmount2":"430.00","senderName":"Jo\u00e3o Comprador","senderEmail":"email@comprador.com.br","paymentMethodGroup1":"CREDIT_CARD","paymentMethodConfigKey1_1":"MAX_INSTALLMENTS_NO_INTEREST","paymentMethodConfigValue1_1":2,"paymentMethodGroup2":"CREDIT_CARD","paymentMethodConfigKey2_1":"MAX_INSTALLMENTS_LIMIT","paymentMethodConfigValue2_1":6}
+29/04/2019 22:27:00 PagSeguro.Session[error]: <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11150</code><message>Unauthorized PaymentMethodConfig: MAX_INSTALLMENTS_LIMIT</message></error></errors>
+29/04/2019 22:27:45 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:27:45 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:27:45 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":"LIBPHP000001","redirectURL":"http:\/\/www.lojamodelo.com.br","notificationURL":"http:\/\/www.lojamodelo.com.br\/nofitication","currency":"BRL","extraAmount":"11.50","itemId1":"0001","itemDescription1":"Notebook prata","itemQuantity1":2,"itemAmount1":"130.00","itemId2":"0002","itemDescription2":"Notebook preto","itemQuantity2":2,"itemAmount2":"430.00","senderName":"Jo\u00e3o Comprador","senderEmail":"email@comprador.com.br","paymentMethodGroup1":"CREDIT_CARD","paymentMethodConfigKey1_1":"MAX_INSTALLMENTS_NO_INTEREST","paymentMethodConfigValue1_1":2}
+29/04/2019 22:27:51 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=2246D4A597979DADD4CC6FBF9BA3863D
+29/04/2019 22:34:25 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:34:25 PagSeguro.Checkout[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=1FD718413516441D9803333021F13503
+29/04/2019 22:34:25 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":"LIBPHP000001","redirectURL":"http:\/\/www.lojamodelo.com.br","notificationURL":"http:\/\/www.lojamodelo.com.br\/nofitication","currency":"BRL","extraAmount":"11.50","itemId1":"0001","itemDescription1":"Notebook prata","itemQuantity1":2,"itemAmount1":"130.00","itemId2":"0002","itemDescription2":"Notebook preto","itemQuantity2":2,"itemAmount2":"430.00","senderName":"Jo\u00e3o Comprador","senderEmail":"email@comprador.com.br","senderCPF":"ins.***.***-**"}
+29/04/2019 22:34:33 PagSeguro.Session[error]: <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><errors><error><code>11164</code><message>senderCPF invalid value: insiraumnumerodevalido</message></error></errors>
+29/04/2019 22:35:04 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:35:04 PagSeguro.Checkout[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=1FD718413516441D9803333021F13503
+29/04/2019 22:35:04 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":"LIBPHP000001","redirectURL":"http:\/\/www.lojamodelo.com.br","notificationURL":"http:\/\/www.lojamodelo.com.br\/nofitication","currency":"BRL","extraAmount":"11.50","itemId1":"0001","itemDescription1":"Notebook prata","itemQuantity1":2,"itemAmount1":"130.00","itemId2":"0002","itemDescription2":"Notebook preto","itemQuantity2":2,"itemAmount2":"430.00","senderName":"Jo\u00e3o Comprador","senderEmail":"email@comprador.com.br"}
+29/04/2019 22:35:16 PagSeguro.Checkout[info]: Checkout URL: https://sandbox.pagseguro.uol.com.br/v2/checkout/payment.html?code=EC697A876D6DBF6774B9FF84A2CFB715
+29/04/2019 22:38:56 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:38:56 PagSeguro.Checkout[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/checkout?email=v77817589513855352329%40sandbox.pagseguro.com.br&token=1FD718413516441D9803333021F13503
+29/04/2019 22:38:56 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":"LIBPHP000001","redirectURL":"http:\/\/www.lojamodelo.com.br","notificationURL":"http:\/\/www.lojamodelo.com.br\/nofitication","currency":"BRL","extraAmount":"11.50","itemId1":"0001","itemDescription1":"Notebook prata","itemQuantity1":2,"itemAmount1":"130.00","itemId2":"0002","itemDescription2":"Notebook preto","itemQuantity2":2,"itemAmount2":"430.00","senderName":"Jo\u00e3o Comprador","senderEmail":"email@comprador.com.br"}
+29/04/2019 22:39:03 PagSeguro.Session[error]: Unauthorized
+29/04/2019 20:07:15 PagSeguro.Checkout[info]: Begin
+29/04/2019 20:07:15 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 20:07:15 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":"LIBPHP000001","redirectURL":"http:\/\/www.lojamodelo.com.br","notificationURL":"http:\/\/www.lojamodelo.com.br\/nofitication","currency":"BRL","extraAmount":"11.50","itemId1":"0001","itemDescription1":"Notebook prata","itemQuantity1":2,"itemAmount1":"130.00","itemId2":"0002","itemDescription2":"Notebook preto","itemQuantity2":2,"itemAmount2":"430.00","senderName":"Jo\u00e3o Comprador","senderEmail":"email@comprador.com.br"}
+29/04/2019 20:07:22 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=3EB605080202672224F62F9735EE2F94
+29/04/2019 21:12:07 PagSeguro.Checkout[info]: Begin
+29/04/2019 21:12:07 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 21:12:07 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":"LIBPHP000001","redirectURL":"http:\/\/www.lojamodelo.com.br","notificationURL":"http:\/\/www.lojamodelo.com.br\/nofitication","currency":"BRL","extraAmount":"11.50","itemId1":"0001","itemDescription1":"Notebook prata","itemQuantity1":2,"itemAmount1":"130.00","itemId2":"0002","itemDescription2":"Notebook preto","itemQuantity2":2,"itemAmount2":"430.00","senderName":"Jo\u00e3o Comprador","senderEmail":"email@comprador.com.br"}
+29/04/2019 21:12:08 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=A5C78946F8F82A0224A2EFB0041AB730
+29/04/2019 21:54:40 PagSeguro.Checkout[info]: Begin
+29/04/2019 21:54:40 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 21:54:40 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":44,"redirectURL":"http:\/\/www.plaas.com.br\/index.php?option=com_osmembership&view=complete&Itemid=215","notificationURL":"http:\/\/www.plaas.com.br\/index.php?option=com_osmembership&task=payment_confirm&payment_method=os_pagseguro","currency":"BRL","itemId1":44,"itemDescription1":"Pagamento para a subscri\u00e7\u00e3o de Starter","itemQuantity1":1,"itemAmount1":"5.00","senderName":"Ricardo Carvalho","senderEmail":"ricardo@plaas.com.br"}
+29/04/2019 21:54:41 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=98EB44DFEDEDD53224F44FB839132073
+29/04/2019 22:00:29 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:00:29 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:00:29 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":45,"redirectURL":"http:\/\/www.plaas.com.br\/index.php?option=com_osmembership&view=complete&Itemid=215","notificationURL":"http:\/\/www.plaas.com.br\/index.php?option=com_osmembership&task=payment_confirm&payment_method=os_pagseguro","currency":"BRL","itemId1":45,"itemDescription1":"Pagamento para a subscri\u00c3\u00a7\u00c3\u00a3o de Starter","itemQuantity1":1,"itemAmount1":"5.00","senderName":"Ricardo Carvalho","senderEmail":"ricardo@plaas.com.br"}
+29/04/2019 22:00:30 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=EC19B14AB3B3FD5444261FB9A49FFED6
+29/04/2019 22:01:44 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:01:44 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:01:44 PagSeguro.Checkout[info]: Params: {"acceptPaymentMethodGroup":"CREDIT_CARD,BALANCE","acceptPaymentMethodName":"DEBITO_ITAU","excludePaymentMethodGroup":"BOLETO","reference":46,"redirectURL":"http:\/\/www.plaas.com.br\/index.php?option=com_osmembership&view=complete&Itemid=215","notificationURL":"http:\/\/www.plaas.com.br\/index.php?option=com_osmembership&task=payment_confirm&payment_method=os_pagseguro","currency":"BRL","itemId1":46,"itemDescription1":"Pagamento para a subscri\u00c3\u00a7\u00c3\u00a3o de Starter","itemQuantity1":1,"itemAmount1":"5.00","senderName":"Ricardo Carvalho","senderEmail":"ricardo@plaas.com.br"}
+29/04/2019 22:01:45 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=127A4FA80F0F842AA4250FBF484F5444
+29/04/2019 22:03:18 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:03:18 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:03:18 PagSeguro.Checkout[info]: Params: 
+29/04/2019 22:03:19 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=7ECD8A6CA8A8FAD88445CF83B3CB2480
+29/04/2019 22:18:40 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:18:40 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:18:40 PagSeguro.Checkout[info]: Params: 
+29/04/2019 22:18:41 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=929F4F7E4C4C356EE4D10F93E93121FA
+29/04/2019 22:24:25 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:24:25 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:24:25 PagSeguro.Checkout[info]: Params: 
+29/04/2019 22:24:26 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=D418C13F4C4C798FF4211FA78319B349
+29/04/2019 22:28:36 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:28:36 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:28:36 PagSeguro.Checkout[info]: Params: 
+29/04/2019 22:28:37 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=A8BD2DA47979A8A774BE0F84C8018672
+29/04/2019 22:31:01 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:31:01 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:31:01 PagSeguro.Checkout[info]: Params: 
+29/04/2019 22:31:02 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=DED0EF0FF5F50524443CFFAEB0C15957
+29/04/2019 22:35:27 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:35:27 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:35:27 PagSeguro.Checkout[info]: Params: 
+29/04/2019 22:35:28 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=F0098F641212B13554EBAFBC7F855264
+29/04/2019 22:38:37 PagSeguro.Checkout[info]: Begin
+29/04/2019 22:38:37 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+29/04/2019 22:38:37 PagSeguro.Checkout[info]: Params: 
+29/04/2019 22:38:38 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=D5EAE6645A5A7E42249A9F8E35CBE345
+30/04/2019 08:54:58 PagSeguro.Checkout[info]: Begin
+30/04/2019 08:54:58 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 08:54:58 PagSeguro.Checkout[info]: Params: 
+30/04/2019 08:54:59 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=1A9E0653949421A664A0AFAD0A662A16
+30/04/2019 09:10:22 PagSeguro.Checkout[info]: Begin
+30/04/2019 09:10:22 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 09:10:22 PagSeguro.Checkout[info]: Params: 
+30/04/2019 09:10:23 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=31F0BE841E1EC4E22410CFAB732AEA88
+30/04/2019 09:16:54 PagSeguro.Checkout[info]: Begin
+30/04/2019 09:16:54 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 09:16:54 PagSeguro.Checkout[info]: Params: 
+30/04/2019 09:16:55 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=2D61FC08D8D8F5CAA41E3F864767935D
+30/04/2019 09:32:08 PagSeguro.Checkout[info]: Begin
+30/04/2019 09:32:08 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 09:32:08 PagSeguro.Checkout[info]: Params: 
+30/04/2019 09:32:11 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=21D901C36161500DD458EFB239AC047C
+30/04/2019 10:05:20 PagSeguro.Checkout[info]: Begin
+30/04/2019 10:05:20 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 10:05:20 PagSeguro.Checkout[info]: Params: 
+30/04/2019 10:05:21 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=83812BD4CFCF95BAA4105FB88FE3D00C
+30/04/2019 13:24:04 PagSeguro.Checkout[info]: Begin
+30/04/2019 13:24:04 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 13:24:04 PagSeguro.Checkout[info]: Params: 
+30/04/2019 13:24:05 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=78BA1FC5C2C243F33428BFBAABA07D24
+30/04/2019 14:03:52 PagSeguro.Checkout[info]: Begin
+30/04/2019 14:03:52 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 14:03:52 PagSeguro.Checkout[info]: Params: 
+30/04/2019 14:03:57 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=F63D2F3E7B7BCFB884033F82A8205B3D
+30/04/2019 14:10:31 PagSeguro.Checkout[info]: Begin
+30/04/2019 14:10:31 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 14:10:31 PagSeguro.Checkout[info]: Params: 
+30/04/2019 14:10:33 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=FF516649D1D1260BB4520F9A27EDBF28
+30/04/2019 14:12:41 PagSeguro.Checkout[info]: Begin
+30/04/2019 14:12:41 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 14:12:41 PagSeguro.Checkout[info]: Params: 
+30/04/2019 14:12:47 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=0CBCD484A1A1855DD451EF9C92E2D678
+30/04/2019 14:13:50 PagSeguro.Checkout[info]: Begin
+30/04/2019 14:13:50 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 14:13:50 PagSeguro.Checkout[info]: Params: 
+30/04/2019 14:13:53 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=0915A7BBDADA27F2241AAF9460559250
+30/04/2019 15:01:56 PagSeguro.Checkout[info]: Begin
+30/04/2019 15:01:56 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+30/04/2019 15:01:56 PagSeguro.Checkout[info]: Params: 
+30/04/2019 15:01:59 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=14B13EA345458E0CC4263FACEB04BEC0
+01/05/2019 19:20:03 PagSeguro.Checkout[info]: Begin
+01/05/2019 19:20:03 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+01/05/2019 19:20:03 PagSeguro.Checkout[info]: Params: 
+01/05/2019 19:20:05 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=BFF370220E0EB7355463EFB7EA2969B2
+01/05/2019 19:21:35 PagSeguro.Checkout[info]: Begin
+01/05/2019 19:21:35 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+01/05/2019 19:21:35 PagSeguro.Checkout[info]: Params: 
+01/05/2019 19:21:36 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=245037257D7DC8FCC4CC4FAE5B7452C7
+01/05/2019 19:49:09 PagSeguro.Checkout[info]: Begin
+01/05/2019 19:49:09 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+01/05/2019 19:49:09 PagSeguro.Checkout[info]: Params: 
+01/05/2019 19:49:10 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=611231376C6CC79CC44C0F84B570CE63
+01/05/2019 19:56:40 PagSeguro.Checkout[info]: Begin
+01/05/2019 19:56:40 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+01/05/2019 19:56:40 PagSeguro.Checkout[info]: Params: 
+01/05/2019 19:56:41 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=43C980E2CECEC0D334C2CFBBAB241530
+09/05/2019 21:58:48 PagSeguro.Checkout[info]: Begin
+09/05/2019 21:58:48 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+09/05/2019 21:58:48 PagSeguro.Checkout[info]: Params: 
+09/05/2019 21:58:50 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=F83F9D27FCFC3715548CEFBE32D9D70C
+09/05/2019 22:44:40 PagSeguro.Checkout[info]: Begin
+09/05/2019 22:44:40 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+09/05/2019 22:44:40 PagSeguro.Checkout[info]: Params: 
+09/05/2019 22:44:41 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=F36BFF8D3131415EE4997F9DFDAF4B10
+09/05/2019 22:54:27 PagSeguro.Checkout[info]: Begin
+09/05/2019 22:54:27 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+09/05/2019 22:54:27 PagSeguro.Checkout[info]: Params: 
+09/05/2019 22:54:28 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=E675C74D0101F214442DCFB9500C7651
+10/05/2019 07:51:50 PagSeguro.Checkout[info]: Begin
+10/05/2019 07:51:50 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+10/05/2019 07:51:50 PagSeguro.Checkout[info]: Params: 
+10/05/2019 07:51:51 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=E3FD711580801B2FF4655FBA8DA82908
+10/05/2019 08:07:00 PagSeguro.Checkout[info]: Begin
+10/05/2019 08:07:00 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+10/05/2019 08:07:00 PagSeguro.Checkout[info]: Params: 
+10/05/2019 08:07:01 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=C6E2AD1770708F866492AF982C64C429
+10/05/2019 08:08:19 PagSeguro.Checkout[info]: Begin
+10/05/2019 08:08:19 PagSeguro.Checkout[info]: POST: https://ws.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=bf4b531a-b660-4a28-beea-27d29447aa57314cb72a4effb0fbb7223223a69da94e77ce-9704-49e6-9bca-5f8c1154fc14
+10/05/2019 08:08:19 PagSeguro.Checkout[info]: Params: 
+10/05/2019 08:08:20 PagSeguro.Checkout[info]: Checkout URL: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=FB6E6C61BDBD04CEE4D48F8E44F8E180
+10/05/2019 08:17:35 PagSeguro.Checkout[info]: Begin
+10/05/2019 08:17:35 PagSeguro.Checkout[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=1FD718413516441D9803333021F13503
+10/05/2019 08:17:35 PagSeguro.Checkout[info]: Params: 
+10/05/2019 08:17:36 PagSeguro.Checkout[info]: Checkout URL: https://sandbox.pagseguro.uol.com.br/v2/checkout/payment.html?code=7681790C9E9E727AA476BFAF0F875AB6
+10/05/2019 08:23:18 PagSeguro.Checkout[info]: Begin
+10/05/2019 08:23:18 PagSeguro.Checkout[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/checkout?email=pagamentos%40plaas.com.br&token=1FD718413516441D9803333021F13503
+10/05/2019 08:23:18 PagSeguro.Checkout[info]: Params: 
+10/05/2019 08:23:19 PagSeguro.Checkout[info]: Checkout URL: https://sandbox.pagseguro.uol.com.br/v2/checkout/payment.html?code=B2BF3D3AF9F93D2AA4F4AF9E63CDFEE3

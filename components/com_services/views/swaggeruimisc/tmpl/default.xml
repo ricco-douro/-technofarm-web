@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SERVICES_TITLE_LIST_VIEW_SWAGGERUIMISC" option="View">
+        <message>
+                        <![CDATA[COM_SERVICES_TITLE_LIST_VIEW_SWAGGERUIMISC_DESC]]>
+        </message>
+	</layout>
+    <!-- Add fields to the parameters object for the layout. -->
+    <fields name="params">
+        <fieldset name="params"
+                  label="COM_SERVICES_SWAGGERUIMISC_FIELD_URL_SWAGGERJSON"
+        >
+            <field
+                    name="swaggerjson"
+                    type="url"
+                    label="COM_SERVICES_SWAGGERUIMISC_FIELD_URL_SWAGGERJSON"
+                    description="COM_SERVICES_SWAGGERUIMISC_FIELD_URL_SWAGGERJSON_DESC"
+                    >
+            </field>
+        </fieldset>
+    </fields>
+</metadata>

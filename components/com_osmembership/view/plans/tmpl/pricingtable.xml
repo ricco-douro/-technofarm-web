@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Pricing table layout">
+		<message>
+			Displays a list of subscription plans in pricing table layout
+		</message>
+	</layout>		
+	<fields name="request">			
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_osmembership/model/fields">
+			<field name="id" type="osmcategory" size="3" default="0" label="Select Category" description="Select category which you want to display subscription plans" />
+		</fieldset>
+	</fields>
+    <fields name="params">
+        <fieldset name="basic">
+            <field name="recommended_campaign_id" type="text" size="3" default="" label="Recommended Plan ID" description="ID of the Subscriotion Plan which will be marked as Recommended" />
+        </fieldset>
+    </fields>
+</metadata>

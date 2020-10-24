@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+	<name>Membership Pro Reminder</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>contact@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2019 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>Nov 2012</creationDate>
+	<version>2.17.1</version>
+	<description>This plugin check and send reminder emails to subscribers to inform them about membership expire so that they can login to renew their membership</description>
+	<files>
+		<filename plugin="osmembershipreminder">osmembershipreminder.php</filename>
+	</files>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="debug" type="list" label="Debug" description="In case set to Yes, the reminder emails will be checked and sent on every page load, for debug purpose only">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="last_run" label="Last Run Time" type="text" readonly="true" size="30" description="Store Last Run Time of the plugin"></field>
+				<field name="number_subscribers" label="Number Subscribers" type="text" size="30" default="10" description="Number of subscribers which we will send reminder each time the plugin run"></field>
+				<field name="bcc_email" label="BCC Email" type="text" size="30" default="" description="If you want to receive a copy of reminder email so that you can keep track of reminder, enter the email you want here"></field>
+			</fieldset>
+		</fields>
+	</config>	
+</extension>

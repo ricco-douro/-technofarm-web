@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VERSION\n"
+"POT-Creation-Date: 2017-02-16 15:43+0000\n"
+"PO-Revision-Date: 2017-02-16 15:43+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE TEAM <EMAIL@ADDRESS>\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "На жаль, ця сторинка не знайдена."
+
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Ви зайшли як <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Вийти?</a>"
+
+msgid "Continue reading"
+msgstr "Читати далі"
+
+msgid "%1$s Previous"
+msgstr "%1$s Попередня"
+
+msgid "Next %1$s"
+msgstr "Наступна %1$s"
+
+msgid "Nothing Found"
+msgstr "Нічого не знайдено"
+
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Чи готові опублікувати свій перший запис? <a href=\"%1$s\">Почніть тут</a>."
+
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "На жаль, не знайдені результати, що відповідають критеріям Вашого пошуку. Будь ласка, спробуйте повторити пошук з іншими ключовими словами."
+
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Здається, ми не можемо знайти те, що Ви шукаєте. Скористайтеся системою пошуку."
+
+msgid "%1$s Edit"
+msgstr "%1$s Редагувати"
+
+msgid "Written by %s on %s."
+msgstr "Опублікував(ла) %s , %s."
+
+msgid "Posted in %1$s."
+msgstr "Да публікації: %1$s"
+
+msgid "0 Comments"
+msgstr "Коментарів немає"
+
+msgid "1 Comment"
+msgstr "Один коментар"
+
+msgid "% Comments"
+msgstr "% коментарів"
+
+msgid "Written by %s."
+msgstr "Автор: %s."
+
+msgid "Written on %s."
+msgstr "Дата публікації: %s."
+
+msgid "Tags: %1$s"
+msgstr "Тегі: %1$s"
+

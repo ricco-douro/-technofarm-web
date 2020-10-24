@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="djclassifiedspayment"  method="upgrade">
+	<name>DJ-Classifieds MercadoPago payment</name>
+	<author>DJ-Extensions.com</author>
+	<creationDate>June 2014</creationDate>
+	<copyright>Copyright (C) 2010 DJ-Extensions.com LTD, All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>contact@design-jooma.eu</authorEmail>
+	<authorUrl>http://design-joomla.eu</authorUrl>
+	<version>3.6.8</version>
+	<description><![CDATA[
+	<div style="margin-bottom:10px;">
+	<a target="_blank" href="http://dj-extensions.com/dj-classifieds" title="http://dj-extensions.com/dj-classifieds"><img src="../plugins/djclassifiedspayment/djcfMercadoPago/djcfMercadoPago/images/dj-classifieds.gif" alt="DJ-Extensions.com" /></a>
+	<a target="_blank" href="https://www.mercadopago.com/"><img title="mercadopago.com" src="../plugins/djclassifiedspayment/djcfMercadoPago/djcfMercadoPago/images/mercadopago_logo_mini.png" alt="Sofort Merchant Account" /></a>
+	<span style="color: #444;margin-left: 5px;">DJ-Classifieds MercadoPago payment plugin</span>
+	</div>
+		]]></description>
+	<files>
+		<filename plugin="djcfMercadoPago">djcfMercadoPago.php</filename>
+		<filename>index.html</filename>
+		<folder>djcfMercadoPago</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_djclassifiedspayment_djcfMercadoPago.ini</language>
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="test_mode" type="radio" default="1" label="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_TEST_MODE" description="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_TEST_MODE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="client_id" required="true" type="text" default="" label="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_CLIENT_ID" description="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_CLIENT_ID_DESC" />
+				<field name="client_secret" required="true" type="text" default="" label="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_CLIENT_SECRET" description="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_CLIENT_SECRET_DESC" />
+				<field name="currency_code" required="true" type="list" default="USD" label="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_CURRENCY_CODE" description="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_CURRENCY_CODE_DESC">
+					<option value="USD">USD</option>
+					<option value="ARS">ARS</option>
+					<option value="BRL">BRL</option>
+					<option value="MXN">MXN</option>
+					<option value="VEF">VEF</option>
+				</field>
+				<field name="notification_url" type="text" size="80" readonly="true"  label="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_NOTIFICATION_URL" description="PLG_DJCLASSIFIEDSPAYMENT_DJCFMERCADOPAGO_NOTIFICATION_URL_DESC" default="http://domain.com/index.php?option=com_djclassifieds&amp;task=processPayment&amp;ptype=djcfMercadoPago&amp;pactiontype=notify"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

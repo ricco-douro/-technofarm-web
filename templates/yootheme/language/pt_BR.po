@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VERSION\n"
+"POT-Creation-Date: 2017-02-28 15:29+0000\n"
+"PO-Revision-Date: 2017-02-28 15:29+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE TEAM <EMAIL@ADDRESS>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ops! Essa página não pode ser encontrada."
+
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Logado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Sair dessa conta\">Sair?</a>"
+
+msgid "Continue reading"
+msgstr "Continue lendo"
+
+msgid "%1$s Previous"
+msgstr "%1$s Anterior"
+
+msgid "Next %1$s"
+msgstr "Próximo %1$s"
+
+msgid "Nothing Found"
+msgstr "Não Encontrado"
+
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Pronto para publicar seu primeiro post? <a href=\"%1$s\">Comece aqui</a>."
+
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Desculpe, mas nada coincide com seus termos de busca. Por favor, tente novamente com palavras diferentes."
+
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que não podemos encontrar o que você está procurando. Talvez uma busca possa ajudar."
+
+msgid "%1$s Edit"
+msgstr "%1$s Editar"
+
+msgid "Written by %s on %s."
+msgstr "Escrito por %s em %s."
+
+msgid "Posted in %1$s."
+msgstr "Postado em %1$s."
+
+msgid "0 Comments"
+msgstr "0 Comentários"
+
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+msgid "% Comments"
+msgstr "% Comentários"
+
+msgid "Written by %s."
+msgstr "Escrito por %s."
+
+msgid "Written on %s."
+msgstr "Escrito em %s."
+
+msgid "Tags: %1$s"
+msgstr "Etiquetas: %1$s"
+

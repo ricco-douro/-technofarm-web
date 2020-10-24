@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="My K2 Items">
+		<message>
+			Display list of k2 items which subscriber can access to. These articles are setup using k2 items restriction method
+		</message>
+	</layout>		
+</metadata>

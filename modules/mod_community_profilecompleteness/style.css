@@ -1,0 +1,75 @@
+.joms-list--pc li {
+    display: table;
+    width: 100%;
+    padding: 6px 14px;
+    border-bottom:1px solid rgba(0,0,0,0.04);
+}
+
+.joms-list--pc li:last-child {
+    border-bottom:0;
+}
+
+.joms-list--pc li span {
+    display: table-cell;
+    width: 50px;
+    text-align: right;
+}
+
+.joms-list--pc li span:before {
+    content:'✚';
+    display: inline-block;
+    padding: 0 2px;
+    font-size:10px;
+}
+
+/* Load animation */
+/*    @-webkit-keyframes load{0%{stroke-dashoffset:0}}
+@keyframes load{0%{stroke-dashoffset:0}}*/
+
+.joms-pc__pgbar--outer {
+    text-align: center;
+}
+
+.joms-pc__pgbar {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.joms-pc__pgbar:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0;
+    font-size: 18px;
+    text-align: center;
+}
+.joms-pc__pgbar svg,
+.joms-pc__pgbar {
+    width: 100%;
+    max-width: 140px;
+    height: 100%;
+    max-height: 140px;
+}
+.joms-pc__pgbar svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+.joms-pc__pgbar svg:nth-child(2) path {
+    fill: none;
+    stroke-width: 7;
+    stroke-dasharray: 630;
+    stroke: #fff;
+    opacity:.9;
+/*  -webkit-animation: load 2s;
+    -moz-animation: load 2s;
+    -o-animation: load 2s;
+    animation: load 2s;*/
+}

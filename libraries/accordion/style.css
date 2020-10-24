@@ -1,0 +1,52 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+
+p.link {
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #424242!important;
+    border-radius: 4px;
+	cursor: pointer;
+    box-sizing: border-box;
+    padding: 0 30px;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    text-align: center;
+	line-height: 30px;
+	margin: 4px;
+	-webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+    -webkit-transition-property: color,background-color,border-color,box-shadow;
+    transition-property: color,background-color,border-color,box-shadow;
+    letter-spacing: 1px;
+    background-origin: border-box;
+	font-family: Montserrat;
+    font-weight: 600;
+	}
+	p.notlink {
+    background-color: #ffffff;
+    padding: 5px;
+    border: 1px solid #424242!important;
+    border-radius: 4px;
+	box-sizing: border-box;
+    padding: 0 30px;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    text-align: center;
+	line-height: 30px;
+	margin: 4px;
+	background-origin: border-box;
+	font-family: Montserrat;
+    font-weight: 600;
+	}

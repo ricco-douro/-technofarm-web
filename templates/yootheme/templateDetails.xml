@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="3.1" type="template" client="site" method="upgrade">
+    <name>yootheme</name>
+    <version>1.5.0</version>
+    <creationDate>April 2017</creationDate>
+    <copyright>Copyright (C) YOOtheme GmbH</copyright>
+    <license>GNU General Public License</license>
+    <author>YOOtheme</author>
+    <authorEmail>info@yootheme.com</authorEmail>
+    <authorUrl>https://yootheme.com</authorUrl>
+    <description>
+        <![CDATA[
+
+        <span class="js-tmpl-description">A powerful, flexible and elegant website builder that allows you to create complex pages within minutes and customize every aspect of the theme.</span>
+
+        <style>
+
+            #details .row-fluid > div > h3,
+            #details .row-fluid > div > hr,
+            #details .row-fluid > div > .info-labels { display: none; }
+
+            .js-customizer-show, hr {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .tmpl-body a { color: #5e68c8; }
+            .tmpl-body a:hover { color: #8b5ec8; }
+
+            .tmpl-body .tmpl-headline {
+                font-size: 28px;
+                font-weight: normal;
+                margin-bottom: 25px;
+            }
+
+            .tmpl-flex {
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+            }
+
+            .tmpl-flex > div { box-sizing: border-box; }
+
+            .tmpl-width-1-2 { width: 50%; }
+            .tmpl-width-2-5 { width: 40%; }
+            .tmpl-width-3-5 { width: 60%; }
+
+            .tmpl-text-right { text-align: right; }
+
+            @media (max-width: 1025px) {
+
+                .tmpl-flex {
+                    -ms-flex-wrap: wrap;
+                    -webkit-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                }
+
+                [class*='tmpl-width'] { width: 100%; }
+
+                .tmpl-text-right,
+                .tmpl-text-left { text-align: center; }
+
+            }
+
+            .tmpl-button {
+                display: inline-block;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 25px 30px;
+                border-radius: 2px;
+                background: linear-gradient(140deg, #FE67D4, #4956E3);
+                box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.5);
+                line-height: 10px;
+                color: #fff !important;
+                vertical-align: middle;
+                font-size: 11px;
+                font-weight: bold;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                text-align: center;
+                text-decoration: none !important;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                -webkit-transition: 0.1s ease-in-out;
+                transition: 0.1s ease-in-out;
+                -webkit-transition-property: box-shadow;
+                transition-property: box-shadow;
+            }
+
+            .tmpl-button:hover {
+                box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.5),
+                            0 8px 24px rgba(106,71,195,0.2);
+            }
+
+            .tmpl-list {
+                display: -ms-inline-flexbox;
+                display: -webkit-inline-flex;
+                display: inline-flex;
+                -ms-flex-wrap: wrap;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-left: -15px;
+                padding: 0;
+                list-style: none;
+            }
+
+            .tmpl-list > li {
+                -ms-flex: none;
+                -webkit-flex: none;
+                flex: none;
+                padding-left: 15px;
+                position: relative;
+            }
+
+            .tmpl-text-small {
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+        </style>
+
+        <script>
+            if (window.jQuery) {
+                (function ($) {
+
+                    if (!$('#style-form').length) {
+                        return;
+                    }
+
+                    $('.js-tmpl-description').parent().hide().after('<div class="tmpl-body">' +
+                    '    <p id="alert-customizer" class="alert alert-error hidden">Please enable the <a href="index.php?option=com_plugins&view=plugins&filter_search=yootheme">YOOtheme Framework plugin</a>.</p>' +
+                    '    <p id="alert-apikey" class="alert alert-warning hidden">Please add your YOOtheme API Key in the <a href="index.php?option=com_plugins&view=plugins&filter_search=installer%20yootheme">Installer plugin</a>. You can find the API Key in your <a href="https://yootheme.com/account" target="_blank">Account settings</a>.</p>' +
+                    '    <div class="tmpl-flex">' +
+                    '        <div class="tmpl-width-2-5" style="padding: 40px;">' +
+                    '            <h2 class="tmpl-headline">YOOtheme</h2>' +
+                    '            <p style="line-height: 1.5;">A powerful, flexible and elegant website builder that allows you to create complex pages within minutes and customize every aspect of the theme.</p>' +
+                    '            <div class="js-customizer-show hidden">' +
+                    '                <a href="#" class="tmpl-button js-customizer-open">Open Website Builder</a>' +
+                    '                <div id="customizer"></div>' +
+                    '            </div>' +
+                    '            <hr>' +
+                    '            <div class="tmpl-flex">' +
+                    '                <div class="tmpl-width-2-5 tmpl-text-left tmpl-text-small">' +
+                    '                    <p><a href="https://yootheme.com" target="_blank">YOOtheme.com</a></p>' +
+                    '                </div>' +
+                    '                <div class="tmpl-width-3-5 tmpl-text-right">' +
+                    '                    <ul class="tmpl-list tmpl-text-small">' +
+                    '                      <li><a href="https://yootheme.com/support" target="_blank">Support</a></li>' +
+                    '                      <li><a href="https://yootheme.com/pro/docs/" target="_blank">Docs</a></li>' +
+                    '                      <li><a href="https://yootheme.com/blog/tag/Pro" target="_blank">Blog</a></li>' +
+                    '                    </ul>' +
+                    '                </div>' +
+                    '            </div>' +
+                    '        </div>' +
+                    '        <div class="tmpl-width-3-5 js-customizer-show hidden">' +
+                    '            <img src="../templates/yootheme/template_preview.jpg" class="img-responsive" width="960" height="640" alt="YOOtheme Pro">' +
+                    '        </div>' +
+                    '    </div>' +
+                    '</div>');
+
+                    if (window.$customizer) {
+                        if (!window.$customizer.apikey) {
+                            $('#alert-apikey').removeClass('hidden');
+                        }
+                        $('#style-form .js-customizer-show').removeClass('hidden');
+                    } else {
+                        $('#alert-customizer').removeClass('hidden');
+                    }
+
+                })(window.jQuery);
+            }
+        </script>
+
+        ]]>
+    </description>
+    <files>
+        <folder>js</folder>
+        <folder>css</folder>
+        <folder>less</folder>
+        <folder>html</folder>
+        <folder>config</folder>
+        <folder>vendor</folder>
+        <folder>language</folder>
+        <folder>templates</folder>
+        <filename>config.php</filename>
+        <filename>index.php</filename>
+        <filename>offline.php</filename>
+        <filename>component.php</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_preview.jpg</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>CHANGELOG.md</filename>
+        <filename>composer.json</filename>
+    </files>
+    <positions>
+        <position>toolbar-left</position>
+        <position>toolbar-right</position>
+        <position>navbar</position>
+        <position>header</position>
+        <position>top</position>
+        <position>sidebar</position>
+        <position>bottom</position>
+        <position>mobile</position>
+    </positions>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_yootheme.ini</language>
+        <language tag="de-DE">de-DE/de-DE.tpl_yootheme.ini</language>
+        <language tag="ca-ES">ca-ES/ca-ES.tpl_yootheme.ini</language>
+        <language tag="cs-CZ">cs-CZ/cs-CZ.tpl_yootheme.ini</language>
+        <language tag="da-DK">da-DK/da-DK.tpl_yootheme.ini</language>
+        <language tag="el-GR">el-GR/el-GR.tpl_yootheme.ini</language>
+        <language tag="en-US">en-US/en-US.tpl_yootheme.ini</language>
+        <language tag="es-ES">es-ES/es-ES.tpl_yootheme.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.tpl_yootheme.ini</language>
+        <language tag="hr-HR">hr-HR/hr-HR.tpl_yootheme.ini</language>
+        <language tag="hu-HU">hu-HU/hu-HU.tpl_yootheme.ini</language>
+        <language tag="it-IT">it-IT/it-IT.tpl_yootheme.ini</language>
+        <language tag="nl-NL">nl-NL/nl-NL.tpl_yootheme.ini</language>
+        <language tag="no-NO">no-NO/no-NO.tpl_yootheme.ini</language>
+        <language tag="pl-PL">pl-PL/pl-PL.tpl_yootheme.ini</language>
+        <language tag="pt-PT">pt-PT/pt-PT.tpl_yootheme.ini</language>
+        <language tag="ro-RO">ro-RO/ro-RO.tpl_yootheme.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_yootheme.ini</language>
+        <language tag="uk-UA">uk-UA/uk-UA.tpl_yootheme.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="config" type="hidden" filter="RAW" />
+                <field name="yootheme" type="hidden" default="true" />
+                <field name="widgetkit" type="hidden" default="noconflict" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

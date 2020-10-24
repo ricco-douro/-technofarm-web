@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VERSION\n"
+"POT-Creation-Date: 2017-02-13 10:49+0000\n"
+"PO-Revision-Date: 2017-02-13 10:49+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE TEAM <EMAIL@ADDRESS>\n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "No s&rsquo;ha trobat aquesta pàgina."
+
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Registrat com a <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Finalitza la sessió\">Surt?</a>"
+
+msgid "Continue reading"
+msgstr "Continua llegint"
+
+msgid "%1$s Previous"
+msgstr "%1$s Anterior"
+
+msgid "Next %1$s"
+msgstr "Següent %1$s"
+
+msgid "Nothing Found"
+msgstr "No s&rsquo;ha trobat res"
+
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Esteu preparats per publicar la primera entrada?  <a href=\"%1$s\">Comenceu aquí</a>."
+
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Res no coincideix amb els termes de cerca. Proveu-ho de nou amb alguns termes diferents."
+
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Sembla que no hem trobat el que volíeu. Potser una cerca podria ajudar."
+
+msgid "%1$s Edit"
+msgstr "%1$s Edita"
+
+msgid "Written by %s on %s."
+msgstr "Escrit per %s al %s."
+
+msgid "Posted in %1$s."
+msgstr "Publicat en %1$s."
+
+msgid "0 Comments"
+msgstr "0 comentaris"
+
+msgid "1 Comment"
+msgstr "1 comentari"
+
+msgid "% Comments"
+msgstr "% comentaris"
+
+msgid "Written by %s."
+msgstr "Escrit per %s."
+
+msgid "Written on %s."
+msgstr "Escrit el %s."
+
+msgid "Tags: %1$s"
+msgstr "Etiquetes: %1$s"
+

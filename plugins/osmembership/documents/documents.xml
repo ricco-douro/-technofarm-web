@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="osmembership" method="upgrade">
+	<name>Membership Pro - Documents plugin</name>
+	<author>Tuan Pham Ngoc</author>
+	<authorEmail>tuanpn@joomdonation.com</authorEmail>
+	<authorUrl>http://www.joomdonation.com</authorUrl>
+	<copyright>Copyright (C) 2012 - 2019 Ossolution Team</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>June 2016</creationDate>
+	<version>2.17.1</version>
+	<description>This plugin allows you to manage and give your subscribers download restricted documents for each subscription plan</description>
+	<files>
+		<filename plugin="documents">documents.php</filename>		
+	</files>		
+	<params />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="documents_path" type="text" class="input-xxlarge" size="60" default="media/com_osmembership/documents" label="Document Paths" description="Path to the folder which documents are stored. Could be an absolute path or relative path from root folder of your site" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

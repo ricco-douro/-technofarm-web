@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="search" method="upgrade">
+    <name>plg_search_services</name>
+    <author>Steve Tsiopanos</author>
+    <creationDate>September  8, 2018</creationDate>
+    <copyright>Copyright (C) 2018 Annatech LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>steve.tsiopanos@annatech.com</authorEmail>
+    <authorUrl>https://www.annatech.com</authorUrl>
+    <version>1.3.6</version>
+    <description>PLG_SEARCH_COM_SERVICES_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="services">services.php</filename>
+        <filename>index.html</filename>
+        <folder>language</folder>
+        <folder>language/en-GB</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="search_limit" type="text" default="50" size="5"
+                       description="PLG_SEARCH_COM_SERVICES_FIELD_SEARCHLIMIT_DESC"
+                       label="PLG_SEARCH_COM_SERVICES_FIELD_SEARCHLIMIT_LABEL" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

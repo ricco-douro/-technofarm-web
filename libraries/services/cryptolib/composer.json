@@ -1,0 +1,19 @@
+{
+  "name": "icyapril/cryptolib",
+  "description": "CryptoLib: secure, free & open-source PHP cryptography library for everyone.",
+  "minimum-stability": "beta",
+  "license": "AGPL",
+  "homepage": "https://cryptolib.ju.je",
+  "authors": [
+    {
+      "name": "Junade Ali",
+      "email": "code@junade.com",
+      "homepage": "http://junade.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "IcyApril\\" : "src/"
+    }
+  }
+}

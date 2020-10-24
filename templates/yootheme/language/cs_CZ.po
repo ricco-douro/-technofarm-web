@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: VERSION\n"
+"POT-Creation-Date: 2017-02-13 10:49+0000\n"
+"PO-Revision-Date: 2017-02-13 10:49+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE TEAM <EMAIL@ADDRESS>\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Tuto stránku nelze nalézt."
+
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Přihlášen jako <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Odhlásit se z tohoto účtu\">Odhlásit?</a>"
+
+msgid "Continue reading"
+msgstr "Pokračovat ve čtení"
+
+msgid "%1$s Previous"
+msgstr "%1$s Předchozí"
+
+msgid "Next %1$s"
+msgstr "Následující %1$s"
+
+msgid "Nothing Found"
+msgstr "Nebylo nic nalezeno"
+
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Jste připraveni zveřejnit svůj první příspěvek? <a href=\"%1$s\">Začněte zde</a>."
+
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Promiňte, ale nic nebylo nalezeno. Zopakujte akci s jinými klíčovými slovy."
+
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Zdá se, že nemůžeme najít, co hledáte. Můžete vyzkoušet vyhledávání."
+
+msgid "%1$s Edit"
+msgstr "%1$s Upravit"
+
+msgid "Written by %s on %s."
+msgstr "Napsal %s dne %s."
+
+msgid "Posted in %1$s."
+msgstr "Zveřejněno v %1$s."
+
+msgid "0 Comments"
+msgstr "Žádné komentáře"
+
+msgid "1 Comment"
+msgstr "1 komentář"
+
+msgid "% Comments"
+msgstr "Komentáře %"
+
+msgid "Written by %s."
+msgstr "Napsal %s."
+
+msgid "Written on %s."
+msgstr "Napsáno dne %s."
+
+msgid "Tags: %1$s"
+msgstr "Štítky: %1$s"
+

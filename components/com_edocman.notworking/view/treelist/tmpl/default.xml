@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Tree List">
+		<message>
+			Displays a tree list of categories
+		</message>
+	</layout>	
+	<fields name="request">			
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_edocman/model/fields">
+			<field name="id" type="edocmancategory" size="3" default="0" label="Select Category" description="Choose the category which you want to list it's sub categories" />
+			<field name="category_ids" type="text" default="" label="Enter category IDs" description="Enter Category IDs that you want to show at frontend of this layout" />
+		</fieldset>
+	</fields>
+</metadata>

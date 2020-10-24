@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="module" client="site" method="upgrade">
+	<name>JS Profile Completeness</name>
+	<author>iJoomla</author>
+	<creationDate>April 2015</creationDate>
+	<copyright>Copyright (C) 2008 - 2015 iJoomla. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>support@jomsocial.com</authorEmail>
+	<authorUrl>http://jomsocial.com</authorUrl>
+	<version>4.5.9</version>
+	<description>Profile Completeness module for JomSocial</description>
+	<files>
+		<filename module="mod_community_profilecompleteness">mod_community_profilecompleteness.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_community_profilecompleteness.xml</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>style.css</filename>
+	</files>
+    <languages>
+        <language tag="en-GB">en-GB.mod_community_profilecompleteness.ini</language>
+    </languages>
+	<config>
+		<fields name="params">
+            <fieldset name="basic">
+                <field name="include_req_field" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_INCLUDE_REQ_FIELD_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_INCLUDE_REQ_FIELD_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="include_non_req_field" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_INCLUDE_NON_REQ_FIELD_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_INCLUDE_NON_REQ_FIELD_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="include_avatar" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_INCLUDE_AVATAR_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_INCLUDE_AVATAR_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="include_cover" type="radio" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_INCLUDE_COVER_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_INCLUDE_COVER_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="friends_number" type="list" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_FRIENDS_NUMBER_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_FRIENDS_NUMBER_TIPS">
+                    <option value="0">MOD_COMMUNITY_PROFILECOMPLETENESS_DISABLED</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </field>
+                <field name="groups_number" type="list" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_GROUPS_NUMBER_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_GROUPS_NUMBER_TIPS">
+                    <option value="0">MOD_COMMUNITY_PROFILECOMPLETENESS_DISABLED</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </field>
+                <field name="events_number" type="list" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_EVENTS_NUMBER_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_EVENTS_NUMBER_TIPS">
+                    <option value="0">MOD_COMMUNITY_PROFILECOMPLETENESS_DISABLED</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </field>
+                <field name="videos_number" type="list" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_VIDEOS_NUMBER_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_VIDEOS_NUMBER_TIPS">
+                    <option value="0">MOD_COMMUNITY_PROFILECOMPLETENESS_DISABLED</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </field>
+                <field name="photos_number" type="list" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_PHOTOS_NUMBER_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_PHOTOS_NUMBER_TIPS">
+                    <option value="0">MOD_COMMUNITY_PROFILECOMPLETENESS_DISABLED</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </field>
+                <field name="posts_number" type="list" class="btn-group btn-group-yesno" default="1" label="MOD_COMMUNITY_PROFILECOMPLETENESS_POSTS_NUMBER_SETTINGS" description="MOD_COMMUNITY_PROFILECOMPLETENESS_POSTS_NUMBER_TIPS">
+                    <option value="0">MOD_COMMUNITY_PROFILECOMPLETENESS_DISABLED</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+    <updateservers>
+        <server type="extension" priority="1" name="JS Profile Completeness">https://www.jomsocial.com/updates/jsprofilecompleteness_update.xml</server>
+    </updateservers>
+</extension>

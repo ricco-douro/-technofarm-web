@@ -1,0 +1,8 @@
+{2019/04/28 20:27:50} [Info] PagSeguroPaymentService.Register(PagSeguroRequest: array (
+  'Reference' => 32,
+  'SenderEmail' => 'ricardo@plaas.com.br',
+)) - begin 
+{2019/04/28 20:27:51} [Info] PagSeguroPaymentService.Register(PagSeguroRequest: array (
+  'Reference' => 32,
+  'SenderEmail' => 'ricardo@plaas.com.br',
+)) - end {1}B7E73E18BABA3E9444A96F8946EAFDEE 

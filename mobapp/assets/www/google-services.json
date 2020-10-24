@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "809111004954",
+    "firebase_url": "https://chat-app-senac.firebaseio.com",
+    "project_id": "chat-app-senac",
+    "storage_bucket": "chat-app-senac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809111004954:android:a8639a26f7254719",
+        "android_client_info": {
+          "package_name": "br.com.technofarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809111004954-u38v3g26a8ohtg2frpevb8vj2avdi9kh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbD_7708A460DnldhE4L__KVWHcOXUbpQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809111004954:android:98ef0dd25a5765f6",
+        "android_client_info": {
+          "package_name": "br.com.technofarm.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809111004954-u38v3g26a8ohtg2frpevb8vj2avdi9kh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbD_7708A460DnldhE4L__KVWHcOXUbpQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="module" client="site" method="upgrade">
+    <name>SENAC-Group-Actions</name>
+    <author>GETI @ SENAC MT</author>
+    <creationDate>June 2015</creationDate>
+    <copyright>Copyright (C) 2018 SENAC-MT. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <authorEmail></authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.0.0</version>
+    <description>Painel de ações por grupo para SENAC-MT Social</description>
+    <files>
+        <filename module="Meu Holerite">mod_community_group_actions.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_community_group_actions.xml</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>style.css</filename>
+    </files>
+	
+	<install>
+     <sql>
+         <file driver="mysql" charset="utf8">sql/mysql/install.mysql.utf8.sql</file>
+     </sql>
+	</install>
+
+	
+    <languages>
+        <language tag="pt-BR">pt-BR.mod_community_group_actions.ini</language>
+    </languages>
+	
+    <config>
+    </config>
+</extension>
