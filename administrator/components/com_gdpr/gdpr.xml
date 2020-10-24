@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>GDPR</name>
+	<author>Joomla! Extensions Store</author>
+	<creationDate>March 2019</creationDate>
+	<copyright>Copyright (C) 2018 - Joomla! Extensions Store. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@storejextensions.org</authorEmail>
+	<authorUrl>http://storejextensions.org</authorUrl>
+	<version>1.6.4</version>
+	<description>COM_GDPR_INSTALLATION_MESSAGES</description>
+	
+	<scriptfile>installscript.php</scriptfile>
+	
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install> 
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<!-- FRONTEND -->
+	<files folder="site">
+		<filename>gdpr.php</filename> 
+		<filename>index.html</filename>
+		<!-- CONTROLLERS -->
+		<folder>controllers</folder>
+		<!-- MODEL -->
+		<folder>models</folder>
+		<!-- LANGUAGE -->
+		<folder>language</folder>
+		<!-- MANIFESTS -->
+		<folder>manifests</folder>
+	</files>
+ 
+	<!-- BACKEND -->
+	<administration>
+		<menu link="option=com_gdpr" img="components/com_gdpr/images/gdpr-16x16.png">GDPR</menu>
+		<files folder="admin">
+			<filename>gdpr.php</filename> 
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>index.html</filename>
+			<!-- CONTROLLERS -->
+			<folder>controllers</folder> 
+			<!-- CSS -->
+			<folder>css</folder> 
+			<!-- FRAMEWORK -->
+			<folder>framework</folder> 
+			<!-- IMAGES -->
+			<folder>images</folder>  
+			<!-- JS -->
+			<folder>js</folder>
+			<!-- LANGUAGE -->
+			<folder>language</folder>
+			<!-- MODEL -->
+			<folder>models</folder>
+			<!-- SQL files section -->
+			<folder>sql</folder> 
+			<!-- TABLES -->
+			<folder>tables</folder>
+			<!-- VIEWS -->
+			<folder>views</folder>  
+		</files>  
+	</administration>
+	
+	<!-- UPDATE SERVERS -->
+	<updateservers>
+		<server type="extension" priority="1" name="GDPR Update Server">http://storejextensions.org/updates/gdpr_updater.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset addfieldpath="/administrator/components/com_gdpr/framework/html" id="preferences" name="preferences" label="COM_GDPR_CONFIGURATION_GENERAL">
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_AUTO_UPDATER" />
+		<field name="registration_email" type="text" datavalidation="email" default="" size="50" label="COM_GDPR_REGISTRATION_EMAIL_FORUPDATES" description="COM_GDPR_REGISTRATION_EMAIL_FORUPDATES_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIG_USER_LOGS"/>
+		<field name="log_empty_save" type="radio" default="1" class="btn-group" label="COM_GDPR_LOG_EMPTY_SAVE" description="COM_GDPR_LOG_EMPTY_SAVE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="log_user_create" type="radio" default="1" class="btn-group" label="COM_GDPR_LOG_USER_CREATE" description="COM_GDPR_LOG_USER_CREATE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="log_user_delete" type="radio" default="1" class="btn-group" label="COM_GDPR_LOG_USER_DELETE" description="COM_GDPR_LOG_USER_DELETE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="log_user_ipaddress" type="radio" default="0" class="btn-group" label="COM_GDPR_LOG_USER_IPADDRESS" description="COM_GDPR_LOG_USER_IPADDRESS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="notify_user_self_delete" type="radio" default="0" class="btn-group" label="COM_GDPR_NOTIFY_USER_SELF_DELETE" description="COM_GDPR_NOTIFY_USER_SELF_DELETE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="notify_revoked_consents" type="radio" default="0" class="btn-group" label="COM_GDPR_NOTIFY_REVOKED_CONSENTS" description="COM_GDPR_NOTIFY_REVOKED_CONSENTS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="logs_mailfrom" type="text" size="80" default="" label="COM_GDPR_LOGS_MAILFROM" description="COM_GDPR_LOGS_MAILFROM_DESC"/>
+		<field name="logs_fromname" type="text" size="80" default="" label="COM_GDPR_LOGS_FROMNAME" description="COM_GDPR_LOGS_FROMNAME_DESC"/>
+		<field name="logs_emails" type="text" size="80" default="" label="COM_GDPR_LOGS_EMAILS" description="COM_GDPR_LOGS_EMAILS_DESC"/>
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_gdpr/framework/html" id="cookieconsent" name="cookieconsent" label="COM_GDPR_CONFIGURATION_COOKIECONSENT">
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIG_COOKIECONSENT_SETTINGS"/>
+		<field name="enable_cookie_consent" type="radio" default="1" class="btn-group" label="COM_GDPR_ENABLE_COOKIE_CONSENT" description="COM_GDPR_ENABLE_COOKIE_CONSENT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="enable_log_cookie_consent" type="radio" default="1" class="btn-group" label="COM_GDPR_ENABLE_LOG_COOKIE_CONSENT" description="COM_GDPR_ENABLE_LOG_COOKIE_CONSENT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="compliance_type" type="list" default="opt-in" label="COM_GDPR_COMPLIANCE_TYPE" description="COM_GDPR_COMPLIANCE_TYPE_DESC">
+			<option value="opt-in">COM_GDPR_COMPLIANCE_TYPE_OPTIN</option>
+			<option value="opt-out">COM_GDPR_COMPLIANCE_TYPE_OPTOUT</option>
+			<option value="info">COM_GDPR_COMPLIANCE_TYPE_INFO</option>
+		</field>
+		<field name="disable_first_reload" type="radio" default="0" class="btn-group" label="COM_GDPR_DISABLE_FIRST_RELOAD" description="COM_GDPR_DISABLE_FIRST_RELOAD_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="block_joomla_session_cookie" type="radio" default="1" class="btn-group" label="COM_GDPR_BLOCK_JOOMLA_SESSION_COOKIE" description="COM_GDPR_BLOCK_JOOMLA_SESSION_COOKIE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="block_external_cookies_domains" type="radio" default="0" class="btn-group" label="COM_GDPR_BLOCK_EXTERNAL_COOKIES_DOMAIN" description="COM_GDPR_BLOCK_EXTERNAL_COOKIES_DOMAIN_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="external_blocking_mode" type="list" default="simple" label="COM_GDPR_EXTERNAL_BLOCKING_MODE" description="COM_GDPR_EXTERNAL_BLOCKING_MODE_DESC">
+			<option value="simple">COM_GDPR_EXTERNAL_BLOCKING_MODE_SIMPLE</option>
+			<option value="advanced">COM_GDPR_EXTERNAL_BLOCKING_MODE_ADVANCED</option>
+		</field>
+		<field name="external_advanced_blocking_mode_tags" type="text" class="inputbox-large external_advanced" default="iframe,script,img,source,link" label="COM_GDPR_EXTERNAL_BLOCKING_MODE_TAGS" description="COM_GDPR_EXTERNAL_BLOCKING_MODE_TAGS_DESC" />
+		<field name="external_cookies_domains" type="textarea" default="" rows="15" label="COM_GDPR_EXTERNAL_COOKIES_DOMAIN" description="COM_GDPR_EXTERNAL_COOKIES_DOMAIN_DESC"/>
+		<field name="allow_local_cookies" type="text" class="inputbox-large" default="" label="COM_GDPR_ALLOW_LOCAL_COOKIES" description="COM_GDPR_ALLOW_LOCAL_COOKIES_DESC" />
+		<field name="block_cookie_define" type="radio" default="1" class="btn-group" label="COM_GDPR_BLOCK_COOKIE_DEFINE" description="COM_GDPR_BLOCK_COOKIE_DEFINE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="block_local_cookies_server_side" type="radio" default="0" class="btn-group" label="COM_GDPR_BLOCK_LOCAL_COOKIES_SERVER_SIDE" description="COM_GDPR_BLOCK_LOCAL_COOKIES_SERVER_SIDE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="auto_accept_on_next_page" type="radio" default="0" class="btn-group" label="COM_GDPR_AUTO_ACCEPT_ON_NEXT_PAGE" description="COM_GDPR_AUTO_ACCEPT_ON_NEXT_PAGE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="revokable" type="radio" default="1" class="btn-group" label="COM_GDPR_REVOKABLE" description="COM_GDPR_REVOKABLE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="lawbycountry" type="radio" default="0" class="btn-group" label="COM_GDPR_LAWBYCOUNTRY" description="COM_GDPR_LAWBYCOUNTRY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="checkboxlawbycountry" type="radio" default="0" class="btn-group" label="COM_GDPR_CHECKBOX_LAWBYCOUNTRY" description="COM_GDPR_CHECKBOX_LAWBYCOUNTRY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="open_always_declined" type="radio" default="1" class="btn-group" label="COM_GDPR_OPEN_ALWAYS_DECLINED" description="COM_GDPR_OPEN_ALWAYS_DECLINED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="default_closed_toolbar" type="radio" default="0" class="btn-group" label="COM_GDPR_DEFAULT_CLOSED_TOOLBAR" description="COM_GDPR_DEFAULT_CLOSED_TOOLBAR_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="dismiss_onscroll" type="text" default="0" label="COM_GDPR_DISMISS_ONSCROLL" description="COM_GDPR_DISMISS_ONSCROLL_DESC" />
+		<field name="dismiss_ontimeout" type="text" default="0" label="COM_GDPR_DISMISS_ONTIMEOUT" description="COM_GDPR_DISMISS_ONTIMEOUT_DESC" />
+		<field name="container_selector" type="text" default="body" label="COM_GDPR_CONTAINER_SELECTOR" description="COM_GDPR_CONTAINER_SELECTOR_DESC" />
+		<field name="hide_on_mobile_devices" type="list" default="0" label="COM_GDPR_HIDE_ON_MOBILE_DEVICES" description="COM_GDPR_HIDE_ON_MOBILE_DEVICES_DESC">
+			<option value="0">COM_GDPR_HIDE_ON_MOBILE_DEVICES_NONE</option>
+			<option value="320">COM_GDPR_HIDE_ON_MOBILE_DEVICES_320</option>
+			<option value="480">COM_GDPR_HIDE_ON_MOBILE_DEVICES_480</option>
+			<option value="640">COM_GDPR_HIDE_ON_MOBILE_DEVICES_640</option>
+			<option value="800">COM_GDPR_HIDE_ON_MOBILE_DEVICES_800</option>
+			<option value="960">COM_GDPR_HIDE_ON_MOBILE_DEVICES_960</option>
+			<option value="1024">COM_GDPR_HIDE_ON_MOBILE_DEVICES_1024</option>
+		</field>
+		<field name="placeholder_blocked_resources" type="radio" default="0" class="btn-group" label="COM_GDPR_PLACEHOLDER_BLOCKED_RESOURCES" description="COM_GDPR_PLACEHOLDER_BLOCKED_RESOURCES_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="placeholder_blocked_resources_text" type="text" default="You must accept cookies and reload the page to view this content" class="inputbox-large" label="COM_GDPR_PLACEHOLDER_BLOCKED_RESOURCES_TEXT" description="COM_GDPR_PLACEHOLDER_BLOCKED_RESOURCES_TEXT_DESC" />
+
+   		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIG_COOKIECONSENT_APPEARANCE"/>
+   		<field name="layout" type="list" default="basic" label="COM_GDPR_LAYOUT" description="COM_GDPR_LAYOUT_DESC">
+			<option value="basic">COM_GDPR_LAYOUT_BASIC</option>
+			<option value="basic-close">COM_GDPR_LAYOUT_BASIC_CLOSE</option>
+			<option value="basic-header">COM_GDPR_LAYOUT_BASIC_HEADER</option>
+		</field>
+		<field name="theme" type="list" default="block" label="COM_GDPR_THEME" description="COM_GDPR_THEME_DESC">
+			<option value="block">COM_GDPR_THEME_BLOCK</option>
+			<option value="edgeless">COM_GDPR_THEME_EDGELESS</option>
+		</field>
+		<field name="position" type="list" default="bottom" label="COM_GDPR_POSITION" description="COM_GDPR_POSITION_DESC">
+			<option value="top">COM_GDPR_POSITION_TOP</option>
+			<option value="bottom">COM_GDPR_POSITION_BOTTOM</option>
+			<option value="top-left">COM_GDPR_POSITION_TOP_LEFT</option>
+			<option value="top-right">COM_GDPR_POSITION_TOP_RIGHT</option>
+			<option value="bottom-left">COM_GDPR_POSITION_BOTTOM_LEFT</option>
+			<option value="bottom-right">COM_GDPR_POSITION_BOTTOM_RIGHT</option>
+			<option value="center">COM_GDPR_POSITION_CENTER</option>
+		</field>
+		<field name="position_center_blur_effect" type="radio" default="1" class="btn-group center_modal_block" label="COM_GDPR_POSITION_CENTER_BLUR_EFFECT" description="COM_GDPR_POSITION_CENTER_BLUR_EFFECT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="positionment_type" type="radio" default="1" class="btn-group" label="COM_GDPR_POSITIONMENT_TYPE" description="COM_GDPR_POSITIONMENT_TYPE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="revokeposition" type="list" default="revoke-top" label="COM_GDPR_REVOKEPOSITION" description="COM_GDPR_REVOKEPOSITION_DESC">
+			<option value="revoke-top">COM_GDPR_POSITION_TOP</option>
+			<option value="revoke-bottom">COM_GDPR_POSITION_BOTTOM</option>
+		</field>
+		<field name="revocabletheme" type="list" default="basic" label="COM_GDPR_REVOCABLETHEME" description="COM_GDPR_REVOCABLETHEME_DESC">
+			<option value="basic">COM_GDPR_THEME_BASIC</option>
+			<option value="advanced">COM_GDPR_THEME_ADVANCED</option>
+		</field>
+		<field name="popup_background" type="color" default="#000000" label="COM_GDPR_POPUP_BACKGROUND" description="COM_GDPR_POPUP_BACKGROUND_DESC" />
+		<field name="popup_fontsize" type="list" default="16" label="COM_GDPR_POPUP_FONTSIZE" description="COM_GDPR_POPUP_FONTSIZE_DESC">
+			<option value="10">10px</option>
+			<option value="11">11px</option>
+			<option value="12">12px</option>
+			<option value="13">13px</option>
+			<option value="14">14px</option>
+			<option value="15">15px</option>
+			<option value="16">16px</option>
+			<option value="17">17px</option>
+			<option value="18">18px</option>
+			<option value="19">19px</option>
+			<option value="20">20px</option>
+		</field>
+		<field name="revocable_button_fontsize" type="list" default="16" label="COM_GDPR_REVOCABLE_BUTTON_FONTSIZE" description="COM_GDPR_REVOCABLE_BUTTON_FONTSIZE_DESC">
+			<option value="10">10px</option>
+			<option value="11">11px</option>
+			<option value="12">12px</option>
+			<option value="13">13px</option>
+			<option value="14">14px</option>
+			<option value="15">15px</option>
+			<option value="16">16px</option>
+			<option value="17">17px</option>
+			<option value="18">18px</option>
+			<option value="19">19px</option>
+			<option value="20">20px</option>
+		</field>
+		<field name="popup_padding" type="list" default="1" label="COM_GDPR_POPUP_PADDING" description="COM_GDPR_POPUP_PADDING_DESC">
+			<option value="0">0</option>
+			<option value="0.2">0.2</option>
+			<option value="0.4">0.4</option>
+			<option value="0.6">0.6</option>
+			<option value="0.8">0.8</option>
+			<option value="1">1</option>
+			<option value="1.2">1.2</option>
+			<option value="1.4">1.4</option>
+			<option value="1.6">1.6</option>
+			<option value="1.8">1.8</option>
+			<option value="2">2</option>
+		</field>
+		<field name="popup_background_opacity" type="list" default="100" label="COM_GDPR_POPUP_BACKGROUND_OPACITY" description="COM_GDPR_POPUP_BACKGROUND_OPACITY_DESC">
+			<option value="60">80%</option>
+			<option value="70">60%</option>
+			<option value="80">40%</option>
+			<option value="90">20%</option>
+			<option value="100">0%</option>
+		</field>
+		<field name="popup_text" type="color" default="#FFFFFF" label="COM_GDPR_POPUP_TEXT" description="COM_GDPR_POPUP_TEXT_DESC" />
+		<field name="popup_link" type="color" default="#FFFFFF" label="COM_GDPR_POPUP_LINK" description="COM_GDPR_POPUP_LINK_DESC" />
+		<field name="button_background" type="color" default="#FFFFFF" label="COM_GDPR_BUTTON_BACKGROUND" description="COM_GDPR_BUTTON_BACKGROUND_DESC" />
+		<field name="button_border" type="color" default="#FFFFFF" label="COM_GDPR_BUTTON_BORDER" description="COM_GDPR_BUTTON_BORDER_DESC" />
+		<field name="button_text" type="color" default="#000000" label="COM_GDPR_BUTTON_TEXT" description="COM_GDPR_BUTTON_TEXT_DESC" />
+		<field name="highlight_background" type="color" default="#333333" label="COM_GDPR_HIGHLIGHT_BACKGROUND" description="COM_GDPR_HIGHLIGHT_BACKGROUND_DESC" />
+		<field name="highlight_border" type="color" default="#FFFFFF" label="COM_GDPR_HIGHLIGHT_BORDER" description="COM_GDPR_HIGHLIGHT_BORDER_DESC" />
+		<field name="highlight_text" type="color" default="#FFFFFF" label="COM_GDPR_HIGHLIGHT_TEXT" description="COM_GDPR_HIGHLIGHT_TEXT_DESC" />
+		<field name="highlight_dismiss_background" type="color" default="#333333" label="COM_GDPR_HIGHLIGHT_DISMISS_BACKGROUND" description="COM_GDPR_HIGHLIGHT_DISMISS_BACKGROUND_DESC" />
+		<field name="highlight_dismiss_border" type="color" default="#FFFFFF" label="COM_GDPR_HIGHLIGHT_DISMISS_BORDER" description="COM_GDPR_HIGHLIGHT_DISMISS_BORDER_DESC" />
+		<field name="highlight_dismiss_text" type="color" default="#FFFFFF" label="COM_GDPR_HIGHLIGHT_DISMISS_TEXT" description="COM_GDPR_HIGHLIGHT_DISMISS_TEXT_DESC" />
+		<field name="hide_revokable_button" type="radio" default="0" class="btn-group" label="COM_GDPR_HIDE_REVOKABLE_BUTTON" description="COM_GDPR_HIDE_REVOKABLE_BUTTON_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="hide_revokable_button_onscroll" type="radio" default="0" class="btn-group" label="COM_GDPR_HIDE_REVOKABLE_BUTTON_ONSCROLL" description="COM_GDPR_HIDE_REVOKABLE_BUTTON_ONSCROLL_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="custom_revokable_button" type="list" default="0" label="COM_GDPR_CUSTOM_REVOKABLE_BUTTON" description="COM_GDPR_CUSTOM_REVOKABLE_BUTTON_DESC">
+			<option value="0">COM_GDPR_CUSTOM_REVOKABLE_BUTTON_NO</option>
+			<option value="1">COM_GDPR_CUSTOM_REVOKABLE_BUTTON_YES</option>
+			<option value="2">COM_GDPR_CUSTOM_REVOKABLE_BUTTON_YES_HIDE</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIG_COOKIECONSENT_CONTENTS"/>
+		<field name="header" type="textarea" cols="80" rows="4" default="Cookies used on the website!" label="COM_GDPR_HEADER_TEXT" description="COM_GDPR_HEADER_TEXT_DESC"/>
+		<field name="message" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="This website uses cookies to ensure you get the best experience on our website." label="COM_GDPR_MESSAGE_TEXT" description="COM_GDPR_MESSAGE_TEXT_DESC"/>
+		<field name="dismiss_text" type="text" default="Got it!" label="COM_GDPR_DISMISS_TEXT" description="COM_GDPR_DISMISS_TEXT_DESC" />
+		<field name="allow_text" type="text" default="Allow cookies" label="COM_GDPR_ALLOW_TEXT" description="COM_GDPR_ALLOW_TEXT_DESC" />
+		<field name="deny_text" type="text" default="Decline" label="COM_GDPR_DENY_TEXT" description="COM_GDPR_DENY_TEXT_DESC" />
+		<field name="cookie_policy_link_text" type="text" default="" label="COM_GDPR_COOKIE_POLICY_LINK_TEXT" description="COM_GDPR_COOKIE_POLICY_LINK_TEXT_DESC" />
+		<field name="cookie_policy_link" type="text" class="inputbox-large" default="" label="COM_GDPR_COOKIE_POLICY_LINK" description="COM_GDPR_COOKIE_POLICY_LINK_DESC" />
+		<field name="cookie_policy_revocable_tab_text" type="text" default="Cookie policy" label="COM_GDPR_COOKIE_POLICY_REVOCABLE_TAB_TEXT" description="COM_GDPR_COOKIE_POLICY_REVOCABLE_TAB_TEXT_DESC" />
+		<field name="privacy_policy_link_text" type="text" default="" label="COM_GDPR_PRIVACY_POLICY_LINK_TEXT" description="COM_GDPR_PRIVACY_POLICY_LINK_TEXT_DESC" />
+		<field name="privacy_policy_link" type="text" class="inputbox-large" default="" label="COM_GDPR_PRIVACY_POLICY_LINK" description="COM_GDPR_PRIVACY_POLICY_LINK_DESC" />
+		<field name="show_links" type="radio" default="1" class="btn-group" label="COM_GDPR_SHOW_LINKS" description="COM_GDPR_SHOW_LINKS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="blank_links" type="list" default="_blank" label="COM_GDPR_BLANK_LINKS" description="COM_GDPR_BLANK_LINKS_DESC">
+			<option value="_blank">COM_GDPR_BLANK_LINKS_BLANK</option>
+			<option value="_self">COM_GDPR_BLANK_LINKS_SELF</option>
+		</field>
+		<field name="auto_open_privacy_policy" type="radio" default="0" class="btn-group" label="COM_GDPR_AUTO_OPEN_PRIVACY_POLICY" description="COM_GDPR_AUTO_OPEN_PRIVACY_POLICY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="deny_message_enabled" type="radio" default="0" class="btn-group" label="COM_GDPR_DENY_MESSAGE_ENABLED" description="COM_GDPR_DENY_MESSAGE_ENABLED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="deny_message" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="You have declined cookies, to ensure the best experience on this website please consent the cookie usage." label="COM_GDPR_DENY_MESSAGE_TEXT" description="COM_GDPR_DENY_MESSAGE_TEXT_DESC"/>
+
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIG_CONTENTS_AS_POPUP"/>
+		<field name="use_fancybox_links" type="radio" default="0" class="btn-group" label="COM_GDPR_USE_FANCYBOX_LINKS" description="COM_GDPR_USE_FANCYBOX_LINKS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="fancybox_width" type="text" default="700" label="COM_GDPR_FANCYBOX_WIDTH" description="COM_GDPR_FANCYBOX_WIDTH_DESC" />
+		<field name="fancybox_height" type="text" default="800" label="COM_GDPR_FANCYBOX_HEIGHT" description="COM_GDPR_FANCYBOX_HEIGHT_DESC" />
+		<field name="popup_format_template" type="radio" default="1" class="btn-group" label="COM_GDPR_POPUP_FORMAT_TEMPLATE" description="COM_GDPR_POPUP_FORMAT_TEMPLATE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="use_cookie_policy_contents" type="radio" default="0" class="btn-group" label="COM_GDPR_USE_COOKIE_POLICY_CONTENTS" description="COM_GDPR_USE_COOKIE_POLICY_CONTENTS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_policy_contents" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="" label="COM_GDPR_COOKIE_POLICY_CONTENTS" description="COM_GDPR_COOKIE_POLICY_CONTENTS_DESC"/>
+		<field name="use_privacy_policy_contents" type="radio" default="0" class="btn-group" label="COM_GDPR_USE_PRIVACY_POLICY_CONTENTS" description="COM_GDPR_USE_PRIVACY_POLICY_CONTENTS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="privacy_policy_contents" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="" label="COM_GDPR_PRIVACY_POLICY_CONTENTS" description="COM_GDPR_PRIVACY_POLICY_CONTENTS_DESC"/>
+   	</fieldset>
+   	
+	<fieldset addfieldpath="/administrator/components/com_gdpr/framework/html" id="cookiecategories" name="cookiecategories" label="COM_GDPR_CONFIGURATION_COOKIECATEGORIES">
+		<field name="cookie_settings_label" type="text" default="" class="inputbox-large" label="COM_GDPR_COOKIE_SETTINGS_LABEL" description="COM_GDPR_COOKIE_SETTINGS_LABEL_DESC" />
+		<field name="cookie_settings_desc" type="text" default="" class="inputbox-large" label="COM_GDPR_COOKIE_SETTINGS_DESC" description="COM_GDPR_COOKIE_SETTINGS_DESC_DESC" />
+		<field name="toggle_cookie_settings" type="radio" default="0" class="btn-group" label="COM_GDPR_TOGGLE_COOKIE_SETTINGS" description="COM_GDPR_TOGGLE_COOKIE_SETTINGS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="toggle_cookie_settings_text" type="text" default="Settings" label="COM_GDPR_TOGGLE_COOKIE_SETTINGS_TEXT" description="COM_GDPR_TOGGLE_COOKIE_SETTINGS_TEXT_DESC" />
+		<field name="propagate_categories_session" type="radio" default="1" class="btn-group" label="COM_GDPR_PROPAGATE_CATEGORIES_SESSION" description="COM_GDPR_PROPAGATE_CATEGORIES_SESSION_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="always_reload_after_categories_change" type="radio" default="0" class="btn-group" label="COM_GDPR_ALWAYS_RELOAD_AFTER_CATEGORIES_CHANGE" description="COM_GDPR_ALWAYS_RELOAD_AFTER_CATEGORIES_CHANGE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIGURATION_COOKIECATEGORIES_CAT1"/>
+		
+		<field name="cookie_category1_enable" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY1_ENABLE" description="COM_GDPR_COOKIE_CATEGORY1_ENABLE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category1_checked" type="radio" default="1" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY_CHECKED" description="COM_GDPR_COOKIE_CATEGORY_CHECKED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category1_locked" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY_LOCKED" description="COM_GDPR_COOKIE_CATEGORY_LOCKED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category1_name" type="text" default="Necessary" label="COM_GDPR_COOKIE_CATEGORY1_NAME" description="COM_GDPR_COOKIE_CATEGORY1_NAME_DESC" />
+		<field name="cookie_category1_description" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies." label="COM_GDPR_COOKIE_CATEGORY1_DESCRIPTION" description="COM_GDPR_COOKIE_CATEGORY1_DESCRIPTION_DESC"/>
+		<field name="cookie_category1_list" type="textarea" default="" rows="15" label="COM_GDPR_COOKIE_CATEGORY1_LIST" description="COM_GDPR_COOKIE_CATEGORY1_LIST_DESC"/>
+		<field name="domains_category1_list" type="textarea" default="" rows="15" label="COM_GDPR_DOMAINS_CATEGORY1_LIST" description="COM_GDPR_DOMAINS_CATEGORY1_LIST_DESC"/>			
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIGURATION_COOKIECATEGORIES_CAT2"/>
+		<field name="cookie_category2_enable" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY2_ENABLE" description="COM_GDPR_COOKIE_CATEGORY2_ENABLE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category2_checked" type="radio" default="1" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY_CHECKED" description="COM_GDPR_COOKIE_CATEGORY_CHECKED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category2_locked" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY_LOCKED" description="COM_GDPR_COOKIE_CATEGORY_LOCKED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category2_name" type="text" default="Preferences" label="COM_GDPR_COOKIE_CATEGORY2_NAME" description="COM_GDPR_COOKIE_CATEGORY2_NAME_DESC" />
+		<field name="cookie_category2_description" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in." label="COM_GDPR_COOKIE_CATEGORY2_DESCRIPTION" description="COM_GDPR_COOKIE_CATEGORY2_DESCRIPTION_DESC"/>
+		<field name="cookie_category2_list" type="textarea" default="" rows="15" label="COM_GDPR_COOKIE_CATEGORY2_LIST" description="COM_GDPR_COOKIE_CATEGORY2_LIST_DESC"/>
+		<field name="domains_category2_list" type="textarea" default="" rows="15" label="COM_GDPR_DOMAINS_CATEGORY2_LIST" description="COM_GDPR_DOMAINS_CATEGORY2_LIST_DESC"/>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIGURATION_COOKIECATEGORIES_CAT3"/>
+		<field name="cookie_category3_enable" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY3_ENABLE" description="COM_GDPR_COOKIE_CATEGORY3_ENABLE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category3_checked" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY_CHECKED" description="COM_GDPR_COOKIE_CATEGORY_CHECKED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category3_locked" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY_LOCKED" description="COM_GDPR_COOKIE_CATEGORY_LOCKED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category3_name" type="text" default="Statistics" label="COM_GDPR_COOKIE_CATEGORY3_NAME" description="COM_GDPR_COOKIE_CATEGORY3_NAME_DESC" />
+		<field name="cookie_category3_description" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously." label="COM_GDPR_COOKIE_CATEGORY3_DESCRIPTION" description="COM_GDPR_COOKIE_CATEGORY3_DESCRIPTION_DESC"/>
+		<field name="cookie_category3_list" type="textarea" default="" rows="15" label="COM_GDPR_COOKIE_CATEGORY3_LIST" description="COM_GDPR_COOKIE_CATEGORY3_LIST_DESC"/>	
+		<field name="domains_category3_list" type="textarea" default="" rows="15" label="COM_GDPR_DOMAINS_CATEGORY3_LIST" description="COM_GDPR_DOMAINS_CATEGORY3_LIST_DESC"/>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIGURATION_COOKIECATEGORIES_CAT4"/>
+		<field name="cookie_category4_enable" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY4_ENABLE" description="COM_GDPR_COOKIE_CATEGORY4_ENABLE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category4_checked" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY_CHECKED" description="COM_GDPR_COOKIE_CATEGORY_CHECKED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category4_locked" type="radio" default="0" class="btn-group" label="COM_GDPR_COOKIE_CATEGORY_LOCKED" description="COM_GDPR_COOKIE_CATEGORY_LOCKED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="cookie_category4_name" type="text" default="Marketing" label="COM_GDPR_COOKIE_CATEGORY4_NAME" description="COM_GDPR_COOKIE_CATEGORY4_NAME_DESC" />
+		<field name="cookie_category4_description" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers." label="COM_GDPR_COOKIE_CATEGORY4_DESCRIPTION" description="COM_GDPR_COOKIE_CATEGORY4_DESCRIPTION_DESC"/>
+		<field name="cookie_category4_list" type="textarea" default="" rows="15" label="COM_GDPR_COOKIE_CATEGORY4_LIST" description="COM_GDPR_COOKIE_CATEGORY4_LIST_DESC"/>
+		<field name="domains_category4_list" type="textarea" default="" rows="15" label="COM_GDPR_DOMAINS_CATEGORY4_LIST" description="COM_GDPR_DOMAINS_CATEGORY4_LIST_DESC"/>
+	</fieldset>
+	
+   	<fieldset addfieldpath="/administrator/components/com_gdpr/framework/html" id="userprofile" name="userprofile" label="COM_GDPR_CONFIGURATION_USERPROFILE">
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_USERPROFILE_BUTTONS"/>
+		<field name="userprofile_buttons_delete" type="radio" default="1" class="btn-group" label="COM_GDPR_USERPROFILE_BUTTONS_DELETE" description="COM_GDPR_USERPROFILE_BUTTONS_DELETE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="userprofile_buttons_export" type="radio" default="1" class="btn-group" label="COM_GDPR_USERPROFILE_BUTTONS_EXPORT" description="COM_GDPR_USERPROFILE_BUTTONS_EXPORT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="userprofile_delete_additional_contents" type="radio" default="0" class="btn-group" label="COM_GDPR_USERPROFILE_DELETE_ADDITIONAL_CONTENTS" description="COM_GDPR_USERPROFILE_DELETE_ADDITIONAL_CONTENTS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="userprofile_delete_mode" type="list" default="pseudonymisation" label="COM_GDPR_USERPROFILE_DELETE_MODE" description="COM_GDPR_USERPROFILE_DELETE_MODE_DESC">
+			<option value="pseudonymisation">COM_GDPR_USERPROFILE_DELETE_PSEUDONYMISATION</option>
+			<option value="permanent">COM_GDPR_USERPROFILE_DELETE_PERMANENT</option>
+		</field>
+		<field name="include_raw_post_fields" type="radio" default="0" class="btn-group" label="COM_GDPR_USERPROFILE_INCLUDE_RAW_POST_FIELDS" description="COM_GDPR_USERPROFILE_INCLUDE_RAW_POST_FIELDS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="userprofile_buttons_workingmode" type="list" default="0" label="COM_GDPR_USERPROFILE_BUTTONS_WORKINGMODE" description="COM_GDPR_USERPROFILE_BUTTONS_WORKINGMODE_DESC">
+			<option value="0">COM_GDPR_USERPROFILE_BUTTONS_WORKINGMODE_SELFMADE</option>
+			<option value="1">COM_GDPR_USERPROFILE_BUTTONS_WORKINGMODE_MANUALPROCESSING</option>
+		</field>
+		<field name="userprofile_self_delete_confirmation" type="radio" default="0" class="btn-group" label="COM_GDPR_USERPROFILE_SELF_DELETE_CONFIRMATION" description="COM_GDPR_USERPROFILE_SELF_DELETE_CONFIRMATION_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="userprofile_form_action_workingmode" type="list" default="base" label="COM_GDPR_USERPROFILE_FORM_ACTION_WORKINGMODE" description="COM_GDPR_USERPROFILE_FORM_ACTION_WORKINGMODE_DESC">
+			<option value="base">COM_GDPR_USERPROFILE_FORM_ACTION_WORKINGMODE_BASE</option>
+			<option value="remove">COM_GDPR_USERPROFILE_FORM_ACTION_WORKINGMODE_REMOVE</option>
+		</field>
+		<field name="integrate_comprivacy" type="radio" default="1" class="btn-group" label="COM_GDPR_INTEGRATE_COMPRIVACY" description="COM_GDPR_INTEGRATE_COMPRIVACY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CUSTOM_COMPONENTS_NOFORM_API_USERPROFILE"/>
+		<field name="custom_components_view_userprofile_buttons" type="textarea" default="" rows="10" label="COM_GDPR_CUSTOM_COMPONENTS_VIEW_USERPROFILE_BUTTONS" description="COM_GDPR_CUSTOM_COMPONENTS_VIEW_USERPROFILE_BUTTONS_DESC"/>
+		<field name="custom_components_view_userprofile_buttons_selector" type="text" class="inputbox-large" default="" label="COM_GDPR_CUSTOM_COMPONENTS_VIEW_USERPROFILE_BUTTONS_SELECTOR" description="COM_GDPR_CUSTOM_COMPONENTS_VIEW_USERPROFILE_BUTTONS_SELECTOR_DESC" />
+
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CUSTOM_COMPONENTS_FORM_API_USERPROFILE"/>
+		<field name="custom_components_userprofile_buttons" type="textarea" default="" rows="5" label="COM_GDPR_CUSTOM_COMPONENTS_USERPROFILE_BUTTONS" description="COM_GDPR_CUSTOM_COMPONENTS_USERPROFILE_BUTTONS_DESC"/>
+		<field name="custom_forms_userprofile_buttons" type="textarea" default="" rows="5" label="COM_GDPR_CUSTOM_FORMS_USERPROFILE_BUTTONS" description="COM_GDPR_CUSTOM_FORMS_USERPROFILE_BUTTONS_DESC"/>
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_gdpr/framework/html" id="privacycheckbox" name="privacycheckbox" label="COM_GDPR_CONFIGURATION_CHECKBOX">
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX"/>
+		<field name="privacy_policy_checkbox" type="radio" default="1" class="btn-group" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_ENABLED" description="COM_GDPR_PRIVACY_POLICY_CHECKBOX_ENABLED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="privacy_policy_checkbox_link_text" type="text" default="Privacy policy" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_LINK_TEXT" description="COM_GDPR_PRIVACY_POLICY_CHECKBOX_LINK_TEXT_DESC" />
+		<field name="privacy_policy_checkbox_link" type="text" class="inputbox-large" default="" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_LINK" description="COM_GDPR_PRIVACY_POLICY_CHECKBOX_LINK_DESC" />
+		<field name="privacy_policy_checkbox_link_title" type="text" class="inputbox-large" default="Please agree to our privacy policy, otherwise you will not be able to register." label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_LINK_TITLE" description="COM_GDPR_PRIVACY_POLICY_CHECKBOX_LINK_TITLE_DESC" />
+		<field name="log_usernote_privacypolicy" type="radio" default="1" class="btn-group" label="COM_GDPR_LOG_USERNOTE_PRIVACY_POLICY" description="COM_GDPR_LOG_USERNOTE_PRIVACY_POLICY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="log_usernote_privacypolicy_category" type="usercategories" translation="COM_GDPR_NO_CATEGORY" default="0" label="COM_GDPR_LOG_USERNOTE_PRIVACY_POLICY_CATEGORY" description="COM_GDPR_LOG_USERNOTE_PRIVACY_POLICY_CATEGORY_DESC" />
+		<field name="log_userconsent_privacypolicy" type="radio" default="1" class="btn-group" label="COM_GDPR_LOG_USERCONSENT_PRIVACY_POLICY" description="COM_GDPR_LOG_USERCONSENT_PRIVACY_POLICY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="privacypolicy_serverside_validation" type="radio" default="0" class="btn-group" label="COM_GDPR_PRIVACYPOLICY_SERVERSIDE_VALIDATION" description="COM_GDPR_PRIVACYPOLICY_SERVERSIDE_VALIDATION_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="revokable_privacypolicy" type="radio" default="0" class="btn-group" label="COM_GDPR_REVOKABLE_PRIVACYPOLICY" description="COM_GDPR_REVOKABLE_PRIVACYPOLICY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="block_privacypolicy" type="radio" default="0" class="btn-group" label="COM_GDPR_BLOCK_PRIVACYPOLICY" description="COM_GDPR_BLOCK_PRIVACYPOLICY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="use_checkbox" type="radio" default="1" class="btn-group" label="COM_GDPR_USE_CHECKBOX" description="COM_GDPR_USE_CHECKBOX_DESC">
+			<option value="0">COM_GDPR_USE_RADIO_CONTROL</option>
+			<option value="1">COM_GDPR_USE_CHECKBOX_CONTROL</option>
+		</field>
+		<field name="use_dynamic_checkbox" type="radio" default="1" class="btn-group" label="COM_GDPR_USE_DYNAMIC_CHECKBOX" description="COM_GDPR_USE_DYNAMIC_CHECKBOX_DESC">
+			<option value="0">COM_GDPR_USE_RADIO_CONTROL</option>
+			<option value="1">COM_GDPR_USE_CHECKBOX_CONTROL</option>
+		</field>
+		<field name="remove_attributes" type="radio" default="1" class="btn-group" label="COM_GDPR_REMOVE_ATTRIBUTES" description="COM_GDPR_REMOVE_ATTRIBUTES_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="force_submit_button" type="radio" default="0" class="btn-group" label="COM_GDPR_FORCE_SUBMIT_BUTTON" description="COM_GDPR_FORCE_SUBMIT_BUTTON_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="remove_submit_button_events" type="radio" default="0" class="btn-group" label="COM_GDPR_REMOVE_SUBMIT_BUTTON_EVENTS" description="COM_GDPR_REMOVE_SUBMIT_BUTTON_EVENTS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="checkbox_submission_method" type="list" default="form" label="COM_GDPR_CHECKBOX_SUBMISSION_METHOD" description="COM_GDPR_CHECKBOX_SUBMISSION_METHOD_DESC">
+			<option value="form">COM_GDPR_CHECKBOX_SUBMISSION_METHOD_FORM</option>
+			<option value="button">COM_GDPR_CHECKBOX_SUBMISSION_METHOD_BUTTON</option>
+			<option value="custom">COM_GDPR_CHECKBOX_SUBMISSION_METHOD_CUSTOM</option>
+		</field>
+		<field name="custom_submission_method_selectors" type="text" class="inputbox-large" default="input[type=submit],button[type=submit],button[type=button]" label="COM_GDPR_CUSTOM_SUBMISSION_METHOD_SELECTORS" description="COM_GDPR_CUSTOM_SUBMISSION_METHOD_SELECTORS_DESC" />
+		<field name="custom_append_method" type="radio" default="0" class="btn-group" label="COM_GDPR_CUSTOM_APPEND_METHOD" description="COM_GDPR_CUSTOM_APPEND_METHOD_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="custom_append_method_selectors" type="text" class="inputbox-large" default="input[type=submit],button[type=submit]" label="COM_GDPR_CUSTOM_APPEND_METHOD_SELECTORS" description="COM_GDPR_CUSTOM_APPEND_METHOD_SELECTORS_DESC" />
+		<field name="custom_append_method_target_element" type="list" default="parent" label="COM_GDPR_CUSTOM_APPEND_METHOD_TARGET_ELEMENT" description="COM_GDPR_CUSTOM_APPEND_METHOD_TARGET_ELEMENT_DESC">
+			<option value="parent">COM_GDPR_CUSTOM_APPEND_METHOD_TARGET_ELEMENT_PARENT</option>
+			<option value="exact">COM_GDPR_CUSTOM_APPEND_METHOD_TARGET_ELEMENT_EXACT</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONSENT_REGISTRY"/>
+		<field name="consent_logs_formfields" type="text" class="inputbox-large" default="name,email,subject,message" label="COM_GDPR_CONSENT_LOGS_FORMFIELDS" description="COM_GDPR_CONSENT_LOGS_FORMFIELDS_DESC" />
+		<field name="consent_registry_format" type="list" default="csv" label="COM_GDPR_CONSENT_REGISTRY_FORMAT" description="COM_GDPR_CONSENT_REGISTRY_FORMAT_DESC">
+			<option value="csv">COM_GDPR_CONSENT_REGISTRY_FORMAT_CSV</option>
+			<option value="xls">COM_GDPR_CONSENT_REGISTRY_FORMAT_XLS</option>
+		</field>
+		<field name="consent_registry_include_pseudonymised" type="radio" default="0" class="btn-group" label="COM_GDPR_CONSENT_REGISTRY_INCLUDE_PSEUDONYMISED" description="COM_GDPR_CONSENT_REGISTRY_INCLUDE_PSEUDONYMISED_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="consent_registry_track_previous_consent" type="radio" default="1" class="btn-group" label="COM_GDPR_CONSENT_REGISTRY_TRACK_PREVIOUS_CONSENT" description="COM_GDPR_CONSENT_REGISTRY_TRACK_PREVIOUS_CONSENT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="consent_generic_bypage" type="radio" default="1" class="btn-group" label="COM_GDPR_CONSENT_GENERIC_BYPAGE" description="COM_GDPR_CONSENT_GENERIC_BYPAGE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="consent_dynamic_checkbox_bypage" type="radio" default="1" class="btn-group" label="COM_GDPR_CONSENT_DYNAMIC_CHECKBOX_BYPAGE" description="COM_GDPR_CONSENT_DYNAMIC_CHECKBOX_BYPAGE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_TEMPLATE"/>
+		<field name="checkbox_template_container" type="textarea" default="&lt;div class='control-group'&gt;{field}&lt;/div&gt;" rows="10" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_TEMPLATE_CONTAINER" description="COM_GDPR_PRIVACY_POLICY_CHECKBOX_TEMPLATE_CONTAINER_DESC"/>
+		<field name="checkbox_template_label" type="textarea" default="&lt;div class='control-label' style='display:inline-block'&gt;{label}&lt;/div&gt;" rows="10" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_TEMPLATE_LABEL" description="COM_GDPR_PRIVACY_POLICY_CHECKBOX_TEMPLATE_LABEL_DESC"/>
+		<field name="checkbox_template_controls" type="textarea" default="&lt;div class='controls' style='display:inline-block;margin-left:20px'&gt;{checkbox}&lt;/div&gt;" rows="10" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_TEMPLATE_CONTROL" description="COM_GDPR_PRIVACY_POLICY_CHECKBOX_TEMPLATE_CONTROL_DESC"/>
+		<field name="privacy_policy_checkbox_order" type="list" default="right" label="COM_GDPR_PRIVACYPOLICY_CHECKBOX_ORDER" description="COM_GDPR_PRIVACYPOLICY_CHECKBOX_ORDER_DESC">
+			<option value="right">COM_GDPR_PRIVACYPOLICY_CHECKBOX_ORDER_RIGHT</option>
+			<option value="left">COM_GDPR_PRIVACYPOLICY_CHECKBOX_ORDER_LEFT</option>
+		</field>
+		<field name="checkbox_controls_class" type="radio" default="0" class="btn-group" label="COM_GDPR_CHECKBOX_CONTROLS_CLASS" description="COM_GDPR_CHECKBOX_CONTROLS_CLASS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="checkbox_controls_class_list" type="text" class="inputbox-large" default="required" label="COM_GDPR_CHECKBOX_CONTROLS_CLASS_LIST" description="COM_GDPR_CHECKBOX_CONTROLS_CLASS_LIST_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_PRIVACY_POLICY_CHECKBOX_AS_POPUP"/>
+		<field name="use_fancybox_checkbox" type="radio" default="0" class="btn-group" label="COM_GDPR_USE_FANCYBOX_CHECKBOX" description="COM_GDPR_USE_FANCYBOX_CHECKBOX_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="fancybox_checkbox_width" type="text" default="700" label="COM_GDPR_FANCYBOX_CHECKBOX_WIDTH" description="COM_GDPR_FANCYBOX_CHECKBOX_WIDTH_DESC" />
+		<field name="fancybox_checkbox_height" type="text" default="800" label="COM_GDPR_FANCYBOX_CHECKBOX_HEIGHT" description="COM_GDPR_FANCYBOX_CHECKBOX_HEIGHT_DESC" />
+		<field name="use_checkbox_contents" type="radio" default="0" class="btn-group" label="COM_GDPR_USE_CHECKBOX_CONTENTS" description="COM_GDPR_USE_CHECKBOX_CONTENTS_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="checkbox_contents" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="" label="COM_GDPR_CHECKBOX_CONTENTS" description="COM_GDPR_CHECKBOX_CONTENTS_DESC"/>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CUSTOM_COMPONENTS_NOFORM_API_CHECKBOX"/>
+		<field name="custom_components_view_form_checkbox" type="textarea" default="" rows="10" label="COM_GDPR_CUSTOM_COMPONENTS_VIEW_FORM_CHECKBOX" description="COM_GDPR_CUSTOM_COMPONENTS_VIEW_FORM_CHECKBOX_DESC"/>
+		<field name="custom_components_view_form_checkbox_selector" type="text" class="inputbox-large" default="" label="COM_GDPR_CUSTOM_COMPONENTS_VIEW_FORM_CHECKBOX_SELECTOR" description="COM_GDPR_CUSTOM_COMPONENTS_VIEW_FORM_CHECKBOX_SELECTOR_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CUSTOM_COMPONENTS_FORM_API_CHECKBOX"/>
+		<field name="custom_components_form_checkbox" type="textarea" default="" rows="5" label="COM_GDPR_CUSTOM_COMPONENTS_FORM_CHECKBOX" description="COM_GDPR_CUSTOM_COMPONENTS_FORM_CHECKBOX_DESC"/>
+		<field name="custom_forms_task_checkbox" type="textarea" default="" rows="5" label="COM_GDPR_CUSTOM_FORMS_TASK_CHECKBOX" description="COM_GDPR_CUSTOM_FORMS_TASK_CHECKBOX_DESC"/>
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_gdpr/framework/html" id="record_processing_activities" name="record_processing_activities" label="COM_GDPR_RECORD_PROCESSING_ACTIVITIES_SETTINGS">
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_DATA_CONTROLLER"/>
+		<field name="data_controller_company_name" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_COMPANY_NAME" description="COM_GDPR_DATA_CONTROLLER_COMPANY_NAME_DESC" />
+		<field name="data_controller_person_name" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_PERSON_NAME" description="COM_GDPR_DATA_CONTROLLER_PERSON_NAME_DESC" />
+		<field name="data_controller_address" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_ADDRESS" description="COM_GDPR_DATA_CONTROLLER_ADDRESS_DESC" />
+		<field name="data_controller_vat" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_VAT" description="COM_GDPR_DATA_CONTROLLER_VAT_DESC" />
+		<field name="data_controller_phone" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_PHONE" description="COM_GDPR_DATA_CONTROLLER_PHONE_DESC" />
+		<field name="data_controller_email" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_EMAIL" description="COM_GDPR_DATA_CONTROLLER_EMAIL_DESC" />
+		<field name="data_controller_digital_email" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_DIGITAL_EMAIL" description="COM_GDPR_DATA_CONTROLLER_DIGITAL_EMAIL_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE"/>
+		<field name="data_controller_representative_company_name" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_COMPANY_NAME" description="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_COMPANY_NAME_DESC" />
+		<field name="data_controller_representative_person_name" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_PERSON_NAME" description="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_PERSON_NAME_DESC" />
+		<field name="data_controller_representative_address" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_ADDRESS" description="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_ADDRESS_DESC" />
+		<field name="data_controller_representative_vat" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_VAT" description="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_VAT_DESC" />
+		<field name="data_controller_representative_phone" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_PHONE" description="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_PHONE_DESC" />
+		<field name="data_controller_representative_email" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_EMAIL" description="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_EMAIL_DESC" />
+		<field name="data_controller_representative_digital_email" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_DIGITAL_EMAIL" description="COM_GDPR_DATA_CONTROLLER_REPRESENTATIVE_DIGITAL_EMAIL_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_DATA_PROCESSOR"/>
+		<field name="data_processor_company_name" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_PROCESSOR_COMPANY_NAME" description="COM_GDPR_DATA_PROCESSOR_COMPANY_NAME_DESC" />
+		<field name="data_processor_person_name" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_PROCESSOR_PERSON_NAME" description="COM_GDPR_DATA_PROCESSOR_PERSON_NAME_DESC" />
+		<field name="data_processor_address" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_PROCESSOR_ADDRESS" description="COM_GDPR_DATA_PROCESSOR_ADDRESS_DESC" />
+		<field name="data_processor_vat" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_PROCESSOR_VAT" description="COM_GDPR_DATA_PROCESSOR_VAT_DESC" />
+		<field name="data_processor_phone" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_PROCESSOR_PHONE" description="COM_GDPR_DATA_PROCESSOR_PHONE_DESC" />
+		<field name="data_processor_email" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_PROCESSOR_EMAIL" description="COM_GDPR_DATA_PROCESSOR_EMAIL_DESC" />
+		<field name="data_processor_digital_email" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_PROCESSOR_DIGITAL_EMAIL" description="COM_GDPR_DATA_PROCESSOR_DIGITAL_EMAIL_DESC" />
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_gdpr/framework/html" id="databreach" name="databreach" label="COM_GDPR_DATA_BREACH_SETTINGS">
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_DATA_BREACH_CONTENTS"/>
+		<field name="databreach_email_subject" type="text" size="80" class="inputbox-large" default="A data breach occurred on: {sitename}" label="COM_GDPR_DATABREACH_EMAIL_SUBJECT" description="COM_GDPR_DATABREACH_EMAIL_SUBJECT_DESC"/>
+		<field name="databreach_email_content" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="" label="COM_GDPR_DATABREACH_EMAIL_CONTENT" description="COM_GDPR_DATABREACH_EMAIL_CONTENT_DESC"/>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_DATA_PROTECTION_COMMISSER_CONTENTS"/>
+		<field name="databreach_garante_notify" type="radio" default="0" class="btn-group" label="COM_GDPR_DATABREACH_GARANTE_NOTIFY" description="COM_GDPR_DATABREACH_GARANTE_NOTIFY_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="databreach_garante_email_address" type="text" class="inputbox-large" default="" label="COM_GDPR_DATA_GARANTE_EMAIL_ADDRESS" description="COM_GDPR_DATA_GARANTE_EMAIL_ADDRESS_DESC" />
+		<field name="databreach_garante_email_subject" type="text" size="80" class="inputbox-large" default="A data breach occurred on: {sitename}" label="COM_GDPR_DATABREACH_GARANTE_EMAIL_SUBJECT" description="COM_GDPR_DATABREACH_GARANTE_EMAIL_SUBJECT_DESC"/>
+		<field name="databreach_garante_email_content" type="editor" hide="pagebreak,readmore" width="300px" height="200px" default="" label="COM_GDPR_DATABREACH_GARANTE_EMAIL_CONTENT" description="COM_GDPR_DATABREACH_GARANTE_EMAIL_CONTENT_DESC"/>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_DATA_BREACH_CONTENTS_EMAIL_SETTINGS"/>
+		<field name="databreach_mailfrom" type="text" size="80" default="" label="COM_GDPR_DATABREACH_MAILFROM" description="COM_GDPR_DATABREACH_MAILFROM_DESC"/>
+		<field name="databreach_fromname" type="text" size="80" default="" label="COM_GDPR_DATABREACH_FROMNAME" description="COM_GDPR_DATABREACH_FROMNAME_DESC"/>
+	</fieldset>
+	
+   	<fieldset addfieldpath="/administrator/components/com_gdpr/framework/html" id="advanced" name="advanced" label="COM_GDPR_CONFIGURATION_ADVANCED">
+   		<field type="spacer" class="label label-info spacer" label="COM_GDPR_TPDINTEGRATION_LABEL"/>
+		<field name="3pdintegration" type="list" default="" multiple="multiple" size="10" label="COM_GDPR_TPDINTEGRATION" description="COM_GDPR_TPDINTEGRATION_DESC">
+			<option value="">COM_GDPR_NO_INTEGRATION</option>
+			<option value="acymailing">COM_GDPR_ACYMAILING_INTEGRATION</option>
+			<option value="baforms">COM_GDPR_BAFORMS_INTEGRATION</option>
+			<option value="breezingforms">COM_GDPR_BREEZINGFORMS_INTEGRATION</option>
+			<option value="cbuilder">COM_GDPR_CBUILDER_INTEGRATION</option>
+			<option value="chronoforms6">COM_GDPR_CHRONOFORMS6_INTEGRATION</option>
+			<option value="convertforms">COM_GDPR_CONVERTFORMS_INTEGRATION</option>
+			<option value="creativecontactform">COM_GDPR_CREATIVECONTACTFORM_INTEGRATION</option>
+			<option value="easyblog">COM_GDPR_EASYBLOG_INTEGRATION</option>
+			<option value="easydiscuss">COM_GDPR_EASYDISCUSS_INTEGRATION</option>
+			<option value="easysocial">COM_GDPR_EASYSOCIAL_INTEGRATION</option>
+			<option value="easyprofile">COM_GDPR_EASYPROFILE_INTEGRATION</option>
+			<option value="eventbooking">COM_GDPR_EVENTBOOKING_INTEGRATION</option>
+			<option value="foxcontact">COM_GDPR_FOXCONTACT_INTEGRATION</option>
+			<option value="hikashop">COM_GDPR_HIKASHOP_INTEGRATION</option>
+			<option value="instantfblogin">COM_GDPR_INSTANTFBLOGIN_INTEGRATION</option>
+			<option value="instantppshop">COM_GDPR_INSTANTPPSHOP_INTEGRATION</option>
+			<option value="jomsocial">COM_GDPR_JOMSOCIAL_INTEGRATION</option>
+			<option value="joomshopping">COM_GDPR_JOOMSHOPPING_INTEGRATION</option>
+			<option value="jchatsocial">COM_GDPR_JCHATSOCIAL_INTEGRATION</option>
+			<option value="jrealtimeanalytics">COM_GDPR_JREALTIMEANALYTICS_INTEGRATION</option>
+			<option value="k2">COM_GDPR_K2_INTEGRATION</option>
+			<option value="kunena">COM_GDPR_KUNENA_INTEGRATION</option>
+			<option value="osmembership">COM_GDPR_OSMEMBERSHIP_INTEGRATION</option>
+			<option value="rsform">COM_GDPR_RSFORM_INTEGRATION</option>
+			<option value="sppagebuilder">COM_GDPR_SPPAGEBUILDER_INTEGRATION</option>
+			<option value="ultimateuser">COM_GDPR_ULTIMATEUSER_INTEGRATION</option>
+			<option value="virtuemart">COM_GDPR_VIRTUEMART_INTEGRATION</option>
+			<option value="vikbooking">COM_GDPR_VIKBOOKING_INTEGRATION</option>
+			<option value="vikrentcar">COM_GDPR_VIKRENTCAR_INTEGRATION</option>
+			<option value="vpadvanceduser">COM_GDPR_VPADVANCEDUSER_INTEGRATION</option>
+		</field>
+		
+   		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIGURATION_USERGROUPS_EXCLUSIONS"/>
+   		<field name="disallow_cookie" type="aclgroupsmultiselect" translation="COM_GDPR_NOEXCLUSIONS" default="0" size="15" multiple="multiple" label="COM_GDPR_DISALLOW_COOKIE" description="COM_GDPR_DISALLOW_COOKIE_DESC" />
+   		<field name="disallow_privacypolicy" type="aclgroupsmultiselect" translation="COM_GDPR_NOEXCLUSIONS" default="0" size="15" multiple="multiple" label="COM_GDPR_DISALLOW_PRIVACYPOLICY" description="COM_GDPR_DISALLOW_PRIVACYPOLICY_DESC" />
+   		<field name="disallow_deleteprofile" type="aclgroupsmultiselect" translation="COM_GDPR_NOEXCLUSIONS" default="8" size="15" multiple="multiple" label="COM_GDPR_DISALLOW_DELETEPROFILE" description="COM_GDPR_DISALLOW_DELETEPROFILE_DESC" />
+   		<field name="disallow_exportprofile" type="aclgroupsmultiselect" translation="COM_GDPR_NOEXCLUSIONS" default="0" size="15" multiple="multiple" label="COM_GDPR_DISALLOW_EXPORTPROFILE" description="COM_GDPR_DISALLOW_EXPORTPROFILE_DESC" />
+   		<field name="disallow_logs" type="aclgroupsmultiselect" translation="COM_GDPR_NOEXCLUSIONS" default="0" size="15" multiple="multiple" label="COM_GDPR_DISALLOW_LOGS" description="COM_GDPR_DISALLOW_LOGS_DESC" />
+   	
+   		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIGURATION_ADVANCED_EXCLUSIONS"/>
+		<field name="exclude_logs" type="extensions" default="0" size="10" multiple="multiple" label="COM_GDPR_EXCLUDE_LOGS_EXTENSIONS" description="COM_GDPR_EXCLUDE_LOGS_EXTENSIONS_DESC" />
+		<field name="exclude_cookie_consent" type="extensions" default="0" size="10" multiple="multiple" label="COM_GDPR_EXCLUDE_COOKIE_CONSENT_EXTENSIONS" description="COM_GDPR_EXCLUDE_COOKIE_CONSENT_EXTENSIONS_DESC" />
+		<field name="exclude_userprofile" type="extensions" default="0" size="10" multiple="multiple" label="COM_GDPR_EXCLUDE_USERPROFILE_EXTENSIONS" description="COM_GDPR_EXCLUDE_USERPROFILE_EXTENSIONS_DESC" />
+		<field name="exclude_privacycheckbox" type="extensions" default="0" size="10" multiple="multiple" label="COM_GDPR_EXCLUDE_PRIVACYCHECKBOX_EXTENSIONS" description="COM_GDPR_EXCLUDE_PRIVACYCHECKBOX_EXTENSIONS_DESC" />
+   	
+		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIGURATION_MENU_EXCLUSIONS"/>
+   		<field name="menu_exclusions" type="menumultiselect" default="0" size="20" multiple="multiple" label="COM_GDPR_MENU_EXCLUSIONS" description="COM_GDPR_MENU_EXCLUSIONS_DESC" />
+   	
+   		<field type="spacer" class="label label-info spacer" label="COM_GDPR_CONFIGURATION_ADVANCED_MISC"/>
+   		
+   		<field name="custom_css_styles" type="textarea" default="" class="inputbox-large" rows="10" label="COM_GDPR_CUSTOM_CSS_STYLES" description="COM_GDPR_CUSTOM_CSS_STYLES_DESC"/>
+   		
+   		<field name="csv_delimiter" type="text" default=";" label="COM_GDPR_CSV_DELIMITER" description="COM_GDPR_CSV_DELIMITER_DESC"/>
+   		<field name="csv_enclosure" type="text" default="" label="COM_GDPR_CSV_ENCLOSURE" description="COM_GDPR_CSV_ENCLOSURE_DESC"/>
+   		<field name="xls_format" type="radio" default="1" class="btn-group" label="COM_GDPR_XLS_FORMAT" description="COM_GDPR_XLS_FORMAT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+   		<field name="jch_noconflict" type="radio" default="1" class="btn-group" label="COM_GDPR_JCH_NOCONFLICT" description="COM_GDPR_JCH_NOCONFLICT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="scripts_noconflict" type="radio" default="0" class="btn-group" label="COM_GDPR_SCRIPTS_NOCONFLICT" description="COM_GDPR_SCRIPTS_NOCONFLICT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="auto_manage_caching" type="radio" default="1" class="btn-group" label="COM_GDPR_AUTO_MANAGE_CACHING" description="COM_GDPR_AUTO_MANAGE_CACHING_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="disable_dynamic_checkbox" type="radio" default="0" class="btn-group" label="COM_GDPR_DISABLE_DYNAMIC_CHECKBOX" description="COM_GDPR_DISABLE_DYNAMIC_CHECKBOX_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="override_change_login_name" type="radio" default="1" class="btn-group" label="COM_GDPR_OVERRIDE_CHANGE_LOGIN_NAME" description="COM_GDPR_OVERRIDE_CHANGE_LOGIN_NAME_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+   		<field name="jquery_include" type="radio" default="1" class="btn-group" label="COM_GDPR_JQUERY_INCLUDE" description="COM_GDPR_JQUERY_INCLUDE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="jquery_noconflict" type="radio" default="0" class="btn-group" label="COM_GDPR_JQUERY_NOCONFLICT" description="COM_GDPR_JQUERY_NOCONFLICT_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="disable_version_checker" class="btn-group" type="radio" default="0" label="COM_GDPR_DISABLE_VERSION_CHECKER" description="COM_GDPR_DISABLE_VERSION_CHECKER_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="debug" type="radio" class="btn-group" default="0" label="COM_GDPR_DEBUG_MODE" description="COM_GDPR_DEBUG_MODE_DESC">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+   	</fieldset>
+   	
+	<fieldset name="permissions" id="permissions" label="COM_GDPR_PERMISSIONS">
+		<field name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			validate="rules"
+			filter="rules"
+			component="com_gdpr"
+			section="component" />
+ 	</fieldset>
+</config>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+ <fieldset name="component"
+  label="COM_JSECURE_FIELDSET_CONFIG_CLIENT_OPTIONS_LABEL"
+  description="COM_JSECURE_FIELDSET_CONFIG_CLIENT_OPTIONS_DESC">
+  <field
+   name="version_info"
+   type="hidden"
+   readonly="true"
+   default="1.0"
+   label="COM_JSECURE_FIELD_VERSIONINFO_LABEL"
+   />
+ </fieldset>
+ <fieldset
+  name="permissions"
+  label="JCONFIG_PERMISSIONS_LABEL"
+  description="JCONFIG_PERMISSIONS_DESC"
+  >
+
+  <field
+   name="rules"
+   type="rules"
+   label="JCONFIG_PERMISSIONS_LABEL"
+   class="inputbox"
+   filter="rules"
+   validate="rules"
+   component="com_jsecurelite"
+   section="component" />
+ </fieldset>
+</config>

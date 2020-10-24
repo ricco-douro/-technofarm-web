@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>jSecure Lite</name>
+	<author>Ajay Lulia</author>
+	<authorEmail>ajay.lulia@joomlaserviceprovider.com</authorEmail>
+	<creationDate>2012-12-12</creationDate>
+	<copyright>This component is released under the GNU/GPL License</copyright>
+	<authorUrl>www.joomlaserviceprovider.com</authorUrl>
+	<version>1.0</version>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<description>jSecure Lite has been successfully installed.</description>
+	<installfile>install.jsecurelite.php</installfile>
+	<uninstallfile>uninstall.jsecurelite.php</uninstallfile>
+  	<scriptfile>script.php</scriptfile>  
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jsecurelite.php</filename>
+	</files>
+	<administration>
+		<menu img="components/com_jsecurelite/images/jSecurelite_icon_16x16.png">COM_JSECURELITE_AUTHENTICATION</menu>
+        <submenu>
+			<menu link="option=com_jsecurelite&amp;task=basic" view="basic" alt="BASIC_CONFIGURATION">BASIC_CONFIGURATION</menu>
+			<menu link="option=com_jsecurelite&amp;task=help" view="help" alt="HELP">HELP</menu>
+		</submenu>
+		<files folder="admin">
+			<folder>css</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+			<folder>views</folder>
+			<folder>language</folder>
+			<filename>install.jsecurelite.php</filename>
+			<filename>common.php</filename>
+			<filename>uninstall.jsecurelite.php</filename>
+			<filename>jsecurelite.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>			
+			<filename>params.php</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_jsecurelite.ini</language>
+			<language tag="en-GB">language/en-GB.com_jsecurelite.sys.ini</language>
+		</languages>
+	</administration>
+	<plugins>
+	<plugin folder="plugins" plugin="plg_jsecurelite" name="system -jSecure Lite Plugin" group="system" />
+    </plugins>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="version" type="text"
+					default="1.0"
+					description="COM_BANNERS_FIELD_VERSIONINFO_DESC"
+					label="com_jsecure_FIELD_VERSIONINFO_LABEL"
+					size="5"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<!-- Update servers -->
+    <updateservers>
+        <server type="extension" priority="1" name="jsecurelite">http://www.joomlaserviceprovider.com/update_xml/jsecurelite.xml</server>
+    </updateservers>
+</extension>		
